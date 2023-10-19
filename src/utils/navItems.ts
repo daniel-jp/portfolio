@@ -8,7 +8,20 @@ interface NavItem {
 
 export const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
+    label: 'Home',
+    href: '/',
+  },
+  {
+    label:'Test',
+    href:'/test'
+  },
+  {
+    label: 'About',
+    href: '#',
+  },
+  {
+
+    label: 'Services',
     children: [
       {
         label: 'Explore Design Work',
@@ -23,7 +36,7 @@ export const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Find Work',
+    label: 'Portfolio',
     children: [
       {
         label: 'Job Board',
@@ -38,11 +51,28 @@ export const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Learn Design',
+    label: 'Skills',
+    children: [
+      {
+        label: 'Job Board',
+        subLabel: 'Find your dream design job',
+        href: '#',
+      },
+      {
+        label: 'Freelance Projects',
+        subLabel: 'An exclusive list for contract work',
+        href: '#',
+      },
+    ],
+  },
+
+  {
+    label: 'Blog',
     href: '#',
   },
+
   {
-    label: 'Hire Designers',
+    label: 'Contact',
     href: '#',
   },
 ];
