@@ -1,9 +1,9 @@
 import { Box, ChakraProvider, CSSReset } from '@chakra-ui/react';
 import { RouterProvider } from 'react-router-dom';
 
+import Routes from '../src/Routes';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/Navigation/NavBar';
-import Routes from './routes';
 
 
 

@@ -1,6 +1,4 @@
-import { Box, Flex, SimpleGrid, Stack} from '@chakra-ui/react';
-import React, { Component } from 'react';
-import Footer from '../components/footerComponent/FooterComponent';
+import { Flex, SimpleGrid, Stack } from '@chakra-ui/react';
 
 import ContactComponent from '../components/contactComponent/ContactComponent';
 import ContactComponent2 from '../components/contactComponent/ContactComponent2';
@@ -23,7 +21,6 @@ function ContactPage() {
 
     </SimpleGrid>
     </Stack>
-    <Footer />
     </>
     )
 

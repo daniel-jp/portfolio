@@ -1,6 +1,6 @@
 import '@fontsource/inter/600.css';
 
-import { Box, Flex, Heading, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CalendarCheck } from '@phosphor-icons/react';
 
 import AboutComponent from '../components/aboutComponent/AboutComponent';

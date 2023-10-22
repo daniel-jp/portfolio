@@ -1,5 +1,4 @@
-import { Box, Container, Flex, Icon, Stat, Text, useColorModeValue } from '@chakra-ui/react';
-import { IconType } from 'react-icons/lib';
+import { Box, Flex, Icon, Stat, Text, useColorModeValue } from '@chakra-ui/react';
 
 
 

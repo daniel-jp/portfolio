@@ -1,11 +1,9 @@
 import { Box, chakra, Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
-import React, { Component } from 'react';
 
 import SkillsComponent from '../components/skillsComponent/SkillsComponent';
 import SkillsComponent2 from '../components/skillsComponent/SkillsComponent2';
-import SkillProp from '../skillProp/SkillProp';
-import SkillProp2 from '../skillProp/SkillProp2';
-import Footer from '../components/footerComponent/FooterComponent';
+import SkillProp from '../props/skillProp/SkillProp';
+import SkillProp2 from '../props/skillProp/SkillProp2';
 
 function SkillPage (){
 
@@ -72,8 +70,7 @@ function SkillPage (){
        }
       </SimpleGrid>
     </Box>
-    <Footer />
-      </div>
+  </div>
     )
   
 }

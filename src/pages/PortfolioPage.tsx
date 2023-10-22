@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Heading, Hide, Link, Show, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Link, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 
 import PortfolioComponent from '../components/portfolioComponent/PortfolioComponent';
 import Layout from '../layouts/Layout';
