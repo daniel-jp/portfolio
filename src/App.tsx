@@ -16,7 +16,7 @@ function App() {
         <CSSReset/>
         <NavBar />
         <Box p={4}>
-        <RouterProvider router={Routes()} />
+           <RouterProvider router={Routes()} />
        </Box>
         <Footer/>
     </ChakraProvider>
