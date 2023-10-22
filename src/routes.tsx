@@ -9,12 +9,12 @@ import ServicePage from './pages/ServicePage';
 
 export default function Routes() {
 
-
+/*
   const wait = (time: number | undefined) => {
     return new Promise((resolve) => {
       setTimeout(resolve, time);
     });
-  };
+  };*/
 
   
    const routes = createBrowserRouter(
