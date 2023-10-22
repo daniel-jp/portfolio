@@ -1,7 +1,7 @@
 import { Box, Flex, FormLabel, Image, Stack, useColorModeValue } from '@chakra-ui/react';
 
 
-function SkillsComponent({language,text,img}){
+function SkillsComponent({language,text,img}:{ language: string, text: string, img: string }){
 
   return(
    <>
