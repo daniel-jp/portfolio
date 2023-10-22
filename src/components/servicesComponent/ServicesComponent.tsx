@@ -14,9 +14,9 @@ import {
 
 function Services({icon, title,text,button}:any){
   return( 
-<Box w={"full"} maxW={"7xl"} h={ "full" } >
+<Box w={"full"} >
 
-   <Card align={"center"} pt={4} px={4} bg={"gray.900"}>
+   <Card align={"center"} pt={4} px={3} bg={"gray.50"}>
    <Flex
           w={12}
           h={12}
@@ -26,10 +26,10 @@ function Services({icon, title,text,button}:any){
           bg={useColorModeValue('gray.700', 'gray.800')}>
          <Icon as={icon} fontSize={32} color={"orange.600"} />
         </Flex>
-    <CardHeader textAlign={"center"} color={"gray.300"} >
+    <CardHeader textAlign={"center"} color={"gray.800"} >
       <Heading fontSize={{ base: '1xl', sm: '2xl' }} > {title}</Heading>
     </CardHeader>
-    <CardBody  mt={-8} color={"gray.400"}>
+    <CardBody  mt={-8} color={"gray.600"}>
       <Text textAlign={"center"} >{text}</Text> 
       
     

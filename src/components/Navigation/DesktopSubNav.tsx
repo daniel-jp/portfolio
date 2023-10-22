@@ -10,13 +10,11 @@ interface NavItem {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Box
-      as="a"
-      href={href}
-      role={'group'}
+      as="a" href={href}
+      role={'group'} p={2}
       display={'block'}
-      p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+      _hover={{ bg: useColorModeValue('pink.100', 'gray.900') }}>
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text

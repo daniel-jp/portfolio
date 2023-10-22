@@ -1,3 +1,5 @@
+import '@fontsource/inter/600.css';
+
 import { ChevronDownIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
@@ -15,6 +17,7 @@ import {
 
 import { NAV_ITEMS } from '../../utils/navItems.ts';
 import DesktopNav from './DesktopNav.tsx';
+
 
 
 // WithSubnavigation function as MAIN
@@ -53,11 +56,12 @@ export default function NavBar() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
+        <Flex 
+              flex={{ base: 1 }} justify={{ base: 'center', md: 'start'}}>
+          <Text fontSize={'md'} fontWeight={600}
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
+            color={"gray.800"}>
             Logo
           </Text>
 
@@ -97,14 +101,6 @@ export default function NavBar() {
   )
 }
 
-// DesktopNav  function 
-
-
-
-
-// DesktopSubNav function
-
-
 
 // MobileNav for Mobile divices
 
@@ -134,7 +130,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         _hover={{
           textDecoration: 'none',
         }}>
-        <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
+        <Text color={useColorModeValue('gray.600', 'gray.200')}>
           {label}
         </Text>
         {children && (

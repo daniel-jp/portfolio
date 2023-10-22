@@ -1,4 +1,4 @@
-import { ArrowSquareOut, Cake, Code, GlobeHemisphereEast, MapPinLine, RedditLogo } from 'phosphor-react';
+import { ArrowSquareOut, Cake, Code, GlobeHemisphereEast, MapPinLine, RedditLogo } from '@phosphor-icons/react';
 
 
 export default function PortfolioProps(){

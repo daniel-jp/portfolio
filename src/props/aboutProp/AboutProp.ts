@@ -1,4 +1,4 @@
-import {Cake, Code, GlobeHemisphereEast, MapPinLine, RedditLogo} from 'phosphor-react';
+import { Cake, Code, GlobeHemisphereEast, MapPinLine, RedditLogo } from '@phosphor-icons/react';
 
 
 export default function AboutProp() {

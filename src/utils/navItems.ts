@@ -9,19 +9,16 @@ interface NavItem {
 export const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'Home',
-    href: '/',
-  },
-  {
-    label:'Test',
-    href:'/test'
+    href: '/home',
   },
   {
     label: 'About',
-    href: '#',
+    href: '/about',
   },
   {
 
     label: 'Services',
+    href: '/service',
     children: [
       {
         label: 'Explore Design Work',
@@ -37,6 +34,7 @@ export const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: 'Portfolio',
+    href:'/',
     children: [
       {
         label: 'Job Board',

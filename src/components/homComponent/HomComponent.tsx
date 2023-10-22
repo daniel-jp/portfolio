@@ -1,6 +1,7 @@
+import '@fontsource/inter/600.css';
+
 import { Box, Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import { ArrowCircleDown } from '@phosphor-icons/react';
-
 
 export default function homComponent() {
 
@@ -8,10 +9,9 @@ export default function homComponent() {
 
 
   return (
-  <Box bg={"gray.50"} textAlign={'center'}  >
+  <Box  textAlign={'center'}  >
   
-  
-    
+
     <Flex m={3} display={{sm:'flex', md:'wrap'}}>
 
       <Stack flexGrow={1} flexWrap={"wrap-reverse"} justify={'center'} 
@@ -30,14 +30,16 @@ export default function homComponent() {
                 bottom: 1,
                 left: 0,
               
-              }} display={"flex"}>
+              }} display={"flex"} bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
+              bgClip='text'>
              Hi! it‘s me
             </Text>
            
           </Heading>
          
         <Stack>
-        <Text p={2} fontSize={['2xl', '2xl', '2xl', '4xl']} pt={{base:2, md:10}} as={'span'} 
+        <Text p={2} fontFamily={"'Inter', sans-serif"}
+        fontSize={['2xl', '2xl', '2xl', '5xl']} pt={{base:2, md:10}} as={'span'} 
           >
                Daniel Joaquim Paulino
             </Text>
@@ -52,18 +54,18 @@ export default function homComponent() {
     
 
     <Stack  bgGradient="linear(to-l, #7928CA, #FF0080)" p={3} 
-    h={{sm:300, md:400, lg:400}} mt={10} w={{sm:300, md:400, lg:400}}
-    rounded={"100%"} 
+    h={{sm:200, md:300, lg:300}} mt={10} w={{sm:200, md:300, lg:300}}
+    rounded={{sm:"2%", md:"3%", lg:"50%"}} 
      pr={{sm:3, md: 10, lg:24}} pt={20} justify={'center'}>
 
-             <Image rounded={"100%"} 
-              h={{sm:200, md:300, lg:400}}
-              w={{sm:200, md:300, lg:400}}
+             <Image rounded={{sm:"2%", md:"3%", lg:"50%"}} 
+              h={{sm:200, md:240, lg:260}}
+              w={{sm:200, md:240, lg:260}}
               alt={'Daniel Image'}
               fit={'cover'}
               align={'center'}
               src={
-                '/public/avatar2.png'
+                '/public/danny1.png'
               }/>
 
         

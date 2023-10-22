@@ -1,11 +1,12 @@
+import '@fontsource/inter/700.css';
+
 import { Box, Popover, PopoverContent, PopoverTrigger, Stack, useColorModeValue } from '@chakra-ui/react';
 
 import { NAV_ITEMS } from '../../utils/navItems.ts';
 import DesktopSubNav from '../Navigation/DesktopSubNav';
 
-
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('gray.600', 'gray.200')
+  const linkColor = useColorModeValue('gray.500', 'gray.200')
   const linkHoverColor = useColorModeValue('gray.800', 'white')
   const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 
@@ -19,8 +20,8 @@ const DesktopNav = () => {
                 as="a"
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'sm'}
-                fontWeight={500}
+                fontSize={'md'} 
+                fontWeight={'400'} fontFamily={"'Inter',sans-serif"}
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',

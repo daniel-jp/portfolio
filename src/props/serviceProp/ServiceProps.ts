@@ -1,4 +1,4 @@
-import { Code, Laptop, PenNib } from 'phosphor-react';
+import { Code, Laptop, PenNib } from '@phosphor-icons/react';
 import React, { Component } from 'react';
 
 

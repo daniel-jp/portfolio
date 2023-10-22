@@ -1,8 +1,10 @@
 import React, { lazy } from 'react';
 import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 
+import About from './pages/AboutPage';
 import Home from './pages/Home';
-import Test from './pages/Test';
+import PortfolioPage from './pages/PortfolioPage';
+import ServicePage from './pages/ServicePage';
 
 
 export default function Routes() {
@@ -19,8 +21,10 @@ export default function Routes() {
     createRoutesFromElements(
       <React.Fragment>
       <Route>
-        <Route path="/" element={<Home/>}/>
-        <Route path="test" element={<Test/>}/>
+        <Route path="home" element={<Home/>}/>
+        <Route path="about" element={<About/>}/>
+        <Route path='service' element={<ServicePage/>} ></Route>
+        <Route path='/' element={<PortfolioPage />} ></Route>
       
       </Route>
       </React.Fragment>

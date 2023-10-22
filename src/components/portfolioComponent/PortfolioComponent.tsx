@@ -4,7 +4,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:any){
 
 
   return( 
-<Flex w={"full"} maxW={"7xl"}  align={"center"}
+<Flex w={"full"} align={"center"}
     position="relative" 
     bgPosition="center" backgroundRepeat="no-repeat" visibility={'visible'}
     backgroundSize="cover" rounded={6}

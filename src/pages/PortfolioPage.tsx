@@ -1,16 +1,17 @@
 import { Box, Button, Container, Flex, Heading, Hide, Link, Show, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 
 import PortfolioComponent from '../components/portfolioComponent/PortfolioComponent';
-import portfolioProps from '../PortfolioProps/PortfolioProps';
-import Footer from '../components/footerComponent/FooterComponent';
+import Layout from '../layouts/Layout';
+import portfolioProps from '../props/PortfolioProps/PortfolioProps';
 
 function PortfolioPage(){
 const portfolioprops = portfolioProps();
   return( 
     <>
+    <Layout>
     <Flex  display={"block"}
-      ml={{base:0, md:240}}  justify={'center'} pb={100} 
-      bg={"gray.800"} 
+      justify={'center'} pb={100} 
+     
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>
   
@@ -20,7 +21,7 @@ const portfolioprops = portfolioProps();
     bgClip='text'fontSize={{ base: '2xl', sm:'2xl', md:'3xl', lg:'4xl' }}  textAlign={{base:"center", md:"end"}} fontWeight={'bold'}>
       Latest Projects
         </Heading>
-        <Text color={'gray.400'} textAlign={"center"} fontSize={{ base: '1xl', sm: '1xl', md:'2xl' }}>
+        <Text color={'gray.600'} textAlign={"center"} fontSize={{ base: '1xl', sm: '1xl', md:'2xl' }}>
         On this page I present you my portfolio with projects carried out and those that 
         are in the process of being carried out        </Text>
       </Stack>
@@ -42,7 +43,7 @@ const portfolioprops = portfolioProps();
   </SimpleGrid>
     </Box>
 
-    <Flex mt={3} ml={{base:0, md:240}} align={"center"} justify={"center"} >
+    <Flex mt={3} align={"center"} justify={"center"} >
 
       <Link as={"a"} textAlign={"center"}  bg={"purple.500"} w={"200px"} maxW={"full"} rounded={4}  _hover={{
         bg:"#944CAD"}}>
@@ -53,7 +54,7 @@ const portfolioprops = portfolioProps();
     </Flex>
  
 </Flex>
-<Footer />
+</Layout>
 </>
   )
 }
