@@ -1,5 +1,4 @@
 import { Code, Laptop, PenNib } from '@phosphor-icons/react';
-import React, { Component } from 'react';
 
 
 export default function ServiceProps() {

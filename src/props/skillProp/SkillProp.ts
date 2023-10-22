@@ -1,4 +1,3 @@
-import { SliderMark } from '@chakra-ui/react';
 
   export default function SkillProp(){
 
