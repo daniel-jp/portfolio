@@ -6,9 +6,9 @@ function SkillsComponent2({language,text,img}:{ language: string, text: string, 
   return(
    <>
       <Stack py={'5'} 
-      shadow={'xl'} bg={"gray.900"}  w={"full"} 
-      border={'1px solid'}
-      borderColor={useColorModeValue('gray.800', 'gray.500')}
+      boxShadow='dark-lg' w={"full"} 
+     
+     // borderColor={useColorModeValue('gray.800', 'gray.500')}
       rounded={'lg'}>
      <Flex justifyContent={'space-between'}  align={'center'}  p={4} mr={2} color={"gray.400"}>
         <Box pl={{ base: 2, md: 2 }}>

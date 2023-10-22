@@ -1,20 +1,27 @@
 import { Card, CardBody, CardFooter, CardHeader, Flex, Heading, Icon, Link, Text } from '@chakra-ui/react';
 
-function PortfolioComponent({iconc, titlec,textc, imgc}:any){
+interface PortfolioData {
+  iconc: any;
+  titlec: string;
+  textc: string;
+  imgc: string;
+}
+function PortfolioComponent({iconc, titlec,textc, imgc}:PortfolioData){
 
 
-  return( 
+  return(
 <Flex w={"full"} align={"center"}
-    position="relative" 
+    position="relative"
     bgPosition="center" backgroundRepeat="no-repeat" visibility={'visible'}
     backgroundSize="cover" rounded={6}
-    bgImage={`url(${imgc})`} _hover={{
+    bgImage={`url(${imgc})`}
+    _hover={{
       opacity:'1.0',
       padding: "0px",visibility:'visible',
-      zIndex:"1",}} height={190} justifyContent={"center"}> 
+      zIndex:"1",}} height={190} justifyContent={"center"}>
 
  {/* */}
-   <Card  opacity='0.7'   w={"full"} h={"full"} bg={"blackAlpha.900"} zIndex={-1} align={"center"}>
+   <Card  opacity='0.9'   w={"full"} h={"full"} bg={"blackAlpha.900"} zIndex={-1} align={"center"}>
           
     <CardHeader mb={-4} textAlign={"center"}>
       <Heading color={"#FFFFFF"} fontWeight={"bold"} fontSize={["sm","mg","lg"]} > {titlec}</Heading>

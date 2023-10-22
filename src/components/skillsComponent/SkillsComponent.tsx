@@ -6,10 +6,10 @@ function SkillsComponent({language,text,img}:{ language: string, text: string, i
   return(
    <>
       <Stack py={'5'}  
-      shadow={'xl'} bg={"gray.900"}  w={"full"} 
-      border={'1px solid'}
-      borderColor={useColorModeValue('gray.800', 'gray.500')}
-      rounded={'lg'}>
+      boxShadow='dark-lg'  w={"full"} 
+      
+     // borderColor={useColorModeValue('gray.100', 'gray.500')}
+      rounded={'md'}>
      <Flex justifyContent={'space-between'} align={'center'}  p={4} mr={2} color={"gray.400"}>
         <Box pl={{ base: 2, md: 2 }}>
           <FormLabel fontWeight={"md"} color={"orange.400"} isTruncated>

@@ -32,6 +32,19 @@
     text:"Chakra-ui", 
     img:"chakra1.png",
   
+  },
+  {
+    id:5,
+    language:"CSS",
+    text:"Chakra-ui", 
+    img:"chakra1.png",
+  
+  }, {
+    id:6,
+    language:"CSS",
+    text:"Chakra-ui", 
+    img:"chakra1.png",
+  
   }]
 
   return skillprop;

@@ -9,13 +9,13 @@ import Routes from './Routes';
 
 function App() {
   
-
+  
   return (
     
     <ChakraProvider>
         <CSSReset/>
         <NavBar />
-        <Box p={4}>
+        <Box p={2}>
            <RouterProvider router={Routes()} />
        </Box>
         <Footer/>

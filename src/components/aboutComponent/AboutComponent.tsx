@@ -2,7 +2,10 @@ import { Box, Flex, Icon, Stat, Text, useColorModeValue } from '@chakra-ui/react
 
 
 
-function AboutComponent ({ title,text,icon}:any) {
+function AboutComponent ({ title,text,icon}:
+  { title: string,
+  text: string,
+  icon: any}) {
  
   return(
     <Box textAlign={'center'}>

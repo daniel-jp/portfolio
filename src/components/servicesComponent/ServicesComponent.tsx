@@ -12,9 +12,10 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
+
 function Services({icon, title,text,button}:any){
   return( 
-<Box w={"full"} >
+<Box w={"full"}>
 
    <Card align={"center"} pt={4} px={3} bg={"gray.50"}>
    <Flex

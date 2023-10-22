@@ -38,6 +38,13 @@
     text:"MongoDB", 
     img:"mongodb-1.svg",
   
+  },
+  {
+    id:6,
+    language:"Database",
+    text:"MongoDB", 
+    img:"mongodb-1.svg",
+  
   }]
 
   return skillprop2;

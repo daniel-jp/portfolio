@@ -17,7 +17,7 @@ function AboutPage(){
     <>
     <Layout>
       <Flex bg={"gray.50"}  textAlign={'center'}  px={3} py={3}
-            pt={100} justify={'center'} w={"full"}
+            pt={50} justify={'center'} w={"full"}
             display={'block'} direction={{ base: 'column', sm: 'row' }}>
 
           <Stack  w={"full"} px={4}  pb={10} textAlign={"start"}>

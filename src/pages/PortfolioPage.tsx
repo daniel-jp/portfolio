@@ -16,10 +16,10 @@ const portfolioprops = portfolioProps();
       overflow='hidden'>
   
 
-        <Stack spacing={4} as={Container} pt={100} pb={10}  maxW={'5xl'} textAlign={'center'}>
-        <Heading bgGradient='linear(to-l,#944CAD, #3E91C0, #3E91C0, #3E91C0)' 
-    bgClip='text'fontSize={{ base: '2xl', sm:'2xl', md:'3xl', lg:'4xl' }}  textAlign={{base:"center", md:"end"}} fontWeight={'bold'}>
-      Latest Projects
+        <Stack spacing={4} as={Container} pt={50} pb={5}  maxW={'5xl'} textAlign={'center'}>
+           <Heading bgGradient='linear(to-l,#944CAD, #3E91C0, #3E91C0, #3E91C0)' 
+              bgClip='text'fontSize={{ base: '2xl', sm:'2xl', md:'3xl', lg:'4xl' }}  textAlign={{base:"center", md:"end"}} fontWeight={'bold'}>
+                Latest Projects
         </Heading>
         <Text color={'gray.600'} textAlign={"center"} fontSize={{ base: '1xl', sm: '1xl', md:'2xl' }}>
         On this page I present you my portfolio with projects carried out and those that 

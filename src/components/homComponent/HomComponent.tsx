@@ -9,13 +9,15 @@ export default function homComponent() {
 
 
   return (
-  <Box  textAlign={'center'}  >
+  <Box 
+      justifyContent={"center"} 
+      textAlign={'center'} h={"100vh"} overflowX={"hidden"}>
   
 
-    <Flex m={3} display={{sm:'flex', md:'wrap'}}>
+    <Flex   m={3} display={{sm:'flex', md:'wrap'}}>
 
       <Stack flexGrow={1} flexWrap={"wrap-reverse"} justify={'center'} 
-      pl={{sm:3, md: 20, lg:24}} pt={12}>
+            pl={{sm:3, md: 20, lg:24}} pt={5}>
         <Heading
             lineHeight={1.1}
             fontWeight={600}

@@ -34,7 +34,7 @@ export const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: 'Portfolio',
-    href:'/',
+    href:'/portfolio',
     children: [
       {
         label: 'Job Board',
@@ -50,11 +50,12 @@ export const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: 'Skills',
+    href:'/skills',
     children: [
       {
         label: 'Job Board',
         subLabel: 'Find your dream design job',
-        href: '#',
+        href: '/job',
       },
       {
         label: 'Freelance Projects',
@@ -71,6 +72,6 @@ export const NAV_ITEMS: Array<NavItem> = [
 
   {
     label: 'Contact',
-    href: '#',
+    href: '/contact',
   },
 ];
