@@ -18,6 +18,7 @@ function App() {
         <Box p={2}>
            <RouterProvider router={Routes()} />
        </Box>
+       
         <Footer/>
     </ChakraProvider>
   )
