@@ -3,7 +3,7 @@ import { RouterProvider } from 'react-router-dom';
 
 import Footer from './components/Footer/Footer';
 import NavBar from './components/Navigation/NavBar';
-import Routes from './Routes';
+import Routes from '../src/Routes';
 
 
 
