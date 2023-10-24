@@ -7,7 +7,7 @@ export default function AboutProp() {
     {
       id: 1,
       title: 'Freelancer Avalabbel',
-      text: 'Techs: SpringBoot, React  & Angular',
+      text: 'Techs: SpringBoot & React',
       icon: Code,
     },
     {

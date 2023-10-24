@@ -35,8 +35,8 @@
   {
     id:5,
     language:"Database",
-    text:"MongoDB", 
-    img:"mongodb-1.svg",
+    text:"PostgreSql", 
+    img:"psql.png",
   
   },
   {

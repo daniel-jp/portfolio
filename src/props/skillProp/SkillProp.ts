@@ -31,13 +31,13 @@
     language:"CSS",
     text:"Chakra-ui", 
     img:"chakra1.png",
-  
+   
   },
   {
     id:5,
     language:"CSS",
-    text:"Chakra-ui", 
-    img:"chakra1.png",
+    text:"Material UI", 
+    img:"mui.png",
   
   }, {
     id:6,
