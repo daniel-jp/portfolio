@@ -1,10 +1,12 @@
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import { InstagramLogo, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { ReactNode } from 'react';
+import Logo2 from '../Logo2';
 
 'use client'
 
-const Logo = (props: any) => {
+/*
+const Logo1 = (props: any) => {
   return (
     <svg height={32} viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
@@ -18,6 +20,7 @@ const Logo = (props: any) => {
     </svg>
   )
 }
+*/
 
 const SocialButton = ({
   children,
@@ -52,18 +55,19 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
+    
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container
         as={Stack}
-        maxW={'6xl'}
+        maxW={'7xl'}
         py={4}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Logo />
+        <Logo2/>
         <Text>© 2023 Daniel portfolio. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
@@ -78,5 +82,6 @@ export default function Footer() {
         </Stack>
       </Container>
     </Box>
+   
   )
 }

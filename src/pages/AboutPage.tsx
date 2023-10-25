@@ -98,7 +98,8 @@ function AboutPage(){
           <Box p={2}><Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)'
            bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}}>
             Master’s in Software and Data Engineering</Text></Box>
-          <Box p={4} bg={"#222831"} rounded={4}><Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.200"}>Right after I finished my degree in Morocco, I joined the Masters in Data Engineering and Software Development at Mohamed V University, Faculty of Sciences.</Text></Box> 
+          <Box p={4} bg={"gray.50"} rounded={4}>
+            <Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.600"}>Right after I finished my degree in Morocco, I joined the Masters in Data Engineering and Software Development at Mohamed V University, Faculty of Sciences.</Text></Box> 
           </SimpleGrid>  
           </Box>
     </Stack>
@@ -116,8 +117,8 @@ function AboutPage(){
           <Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
           bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}} >
             Degree in Software and Web Developer</Text></Box>
-          <Box p={4} bg={"#222831"} rounded={4}>
-            <Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.200"}>
+          <Box p={4} bg={"gray.50"} rounded={4}>
+            <Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.600"}>
             I graduated in software at ABDELMALEK ESSAADI university, Higher School of Tetouan-Morocco.</Text></Box> 
           </SimpleGrid> 
           </Box>
@@ -137,7 +138,7 @@ function AboutPage(){
             <Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
             bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}} >Bachelor's Degree in IT Technician</Text>
             </Box>
-          <Box p={4} bg={"#222831"} rounded={4}><Text textAlign={{base:"justify", md:"justify",lg:"start"}}  color={"gray.200"}>
+          <Box p={4} bg={"gray.50"} rounded={4}><Text textAlign={{base:"justify", md:"justify",lg:"start"}}  color={"gray.600"}>
             Professional bachelor Technician Specialized in Computer Science.</Text></Box>
           </SimpleGrid>
           </Box>

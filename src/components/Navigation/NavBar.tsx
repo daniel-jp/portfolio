@@ -17,6 +17,7 @@ import {
 
 import { NAV_ITEMS } from '../../utils/navItems.ts';
 import DesktopNav from './DesktopNav.tsx';
+import Logo from '../Logo.tsx';
 
 
 
@@ -62,7 +63,7 @@ export default function NavBar() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={"gray.800"}>
-            Logo
+            <Logo/>
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
