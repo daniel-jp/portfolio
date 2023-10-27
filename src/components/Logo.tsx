@@ -3,8 +3,8 @@ import { Box } from '@chakra-ui/react';
 
 function Logo () {
   return (
-    <Box w={50} h={50} >
-      <Image borderRadius={'50px'} src='../../public/assets/logos/logo7.png' alt='logo' />
+    <Box borderRadius={'50%'} bg={"purple.800"} p={1} maxW={"55px"} maxH={"55px"}>
+      <Image borderRadius={'50%'} src='../../public/assets/logos/logo9.png' alt='logo' />
     </Box>
   )
 } 
