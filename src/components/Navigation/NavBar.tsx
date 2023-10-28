@@ -10,7 +10,6 @@ import {
   IconButton,
   Stack,
   Text,
-  useBreakpointValue,
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
@@ -95,7 +94,7 @@ export default function NavBar() {
             Sign Up
           </Button>
 
-          <ThemeSelector/>
+<ThemeSelector/>
 
 
         </Stack>
