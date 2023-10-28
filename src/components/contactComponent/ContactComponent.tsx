@@ -17,25 +17,27 @@ function ContactComponent(){
                       </Heading>
                    </VStack>
 
-                    <Text pt={2} fontSize={'md'} textAlign={'start'} color={"gray.200"}> Fill up the form below to contact</Text> 
+                    <Text pt={2} fontSize={'md'} textAlign={'start'} color={"gray.600"}> 
+                    Fill up the form below to contact
+                    </Text> 
     
                     <Box>
                      <Flex py={2} align={"center"} gap={2}>
                       <Text color={"blue.700"}>
-                     <PhoneOutgoing size={32} /></Text><Text fontSize={["sm","md"]} color={"gray.400"}> +212 657 226 746</Text>
+                     <PhoneOutgoing size={32} /></Text><Text fontSize={["sm","md"]} color={"gray.500"}> +212 657 226 746</Text>
                      </Flex>
 
                     <Flex  pb={2}  align={"center"} gap={2}>
                       <Text color={"blue.700"} >
                       <At size={32} /></Text>
-                      <Text color={"gray.400"} fontSize={["sm","md"]}>danieljoaquimpaulinop@gmail.com
+                      <Text color={"gray.500"} fontSize={["sm","md"]}>danieljoaquimpaulinop@gmail.com
                       </Text>
                       </Flex>
 
                       <Flex align={"center"} gap={2}>
                       <Text color={"blue.700"} >
                       <MapPin size={32} /></Text>
-                      <Text color={"gray.400" } fontSize={["sm","md"]} >  Rabat-Morocco
+                      <Text color={"gray.500" } fontSize={["sm","md"]} >  Rabat-Morocco
                       </Text>
                       </Flex>
                     <Link as={"a"} >

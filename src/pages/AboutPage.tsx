@@ -16,7 +16,7 @@ function AboutPage(){
   return(
     <>
     <Layout>
-      <Flex bg={"gray.50"}  textAlign={'center'}  px={3} py={3}
+      <Flex   textAlign={'center'}  px={3} py={3}
             pt={50} justify={'center'} w={"full"} display={'block'} 
             direction={{ base: 'column', sm: 'row' }}>
 
@@ -33,7 +33,7 @@ function AboutPage(){
               Software and Data Engineer
             </Heading>
 
-            <Text pl={2} fontWeight={"500"} color={"gray.600"} fontSize={['sm', 'md','lg']}>
+            <Text pl={2} fontWeight={"500"} color={"gray.500"} fontSize={['sm', 'md','lg']}>
             I'm Daniel Paulino, of Angolan nationality, I live in Morocco for academic training reasons..
             </Text>
           </Stack>
@@ -53,22 +53,16 @@ function AboutPage(){
     </Box>
   
 
-
-
-  
   <Box m={{base:0, sm:2, md:3, lg:10}}>
 
         <Box textAlign={'initial'} mt={10} display={"block"}>
           <Text fontSize={{sm:"1xl",md:"2xl",lg:"3xl"}} fontFamily={"'Inter', sans-serif"}>EDUCATION</Text>
-          <Text textAlign={"justify"} color={"gray.500"} fontSize={{sm:"md",md:"2xl",lg:"2xl"}}>
+          <Text textAlign={"center"} color={"gray.500"} fontSize={{sm:"md",md:"2xl",lg:"2xl"}}>
             Please ensure that the information below represents my educational journey and the diplomas obtained, starting from the bachelor's degree up to the master's degree.
           </Text>
         </Box>
 
     <Box my={5} position={"sticky"}
-
-  
-    
     _before={{
       content:'" "',
       position:'absolute',
@@ -85,7 +79,7 @@ function AboutPage(){
             borderRadius={"50%"} bg={"#944CAD"}>
       </Box>
 
-        <Stack p={{base:3, sm:3, md:3, lg:50}} bg={"gray.200"} rounded={4}
+        <Stack p={{base:3, sm:3, md:3, lg:50}} boxShadow="lg"  rounded={3}
          marginBottom={"0"} 
           maxH={"full"} display={'flex'}>
           <Box px={2}> 
@@ -98,13 +92,13 @@ function AboutPage(){
           <Box p={2}><Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)'
            bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}}>
             Master’s in Software and Data Engineering</Text></Box>
-          <Box p={4} bg={"gray.50"} rounded={4}>
-            <Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.600"}>Right after I finished my degree in Morocco, I joined the Masters in Data Engineering and Software Development at Mohamed V University, Faculty of Sciences.</Text></Box> 
+          <Box p={4} bg={"gray.700"}>
+            <Text textAlign={"center"} color={"gray.500"}>Right after I finished my degree in Morocco, I joined the Masters in Data Engineering and Software Development at Mohamed V University, Faculty of Sciences.</Text></Box> 
           </SimpleGrid>  
           </Box>
     </Stack>
 
-    <Stack p={{base:3, sm:3, md:3,lg:50}} rounded={4} my={4} py={4}  bg={"gray.200"}  marginBottom={"0"} px={2} pt={5} maxH={"full"} display={'flex'}>
+    <Stack p={{base:3, sm:3, md:3,lg:50}} rounded={3} my={4} py={4} boxShadow="lg"  marginBottom={"0"} px={2} pt={5} maxH={"full"} display={'flex'}>
     <Box left={-2}  position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
           <Box px={2}> 
             <SimpleGrid columns={{ base: 1, md:1}}   color={"#944CAD"}>
@@ -117,14 +111,14 @@ function AboutPage(){
           <Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
           bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}} >
             Degree in Software and Web Developer</Text></Box>
-          <Box p={4} bg={"gray.50"} rounded={4}>
-            <Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.600"}>
+          <Box p={4} bg={"gray.700"}>
+            <Text textAlign={"center"} color={"gray.500"}>
             I graduated in software at ABDELMALEK ESSAADI university, Higher School of Tetouan-Morocco.</Text></Box> 
           </SimpleGrid> 
           </Box>
     </Stack>
 
-    <Stack p={{base:3, sm:3, md:3,lg:50}} rounded={4} bg={"gray.200"} px={2} my={4} py={4} 
+    <Stack p={{base:3, sm:3, md:3,lg:50}} rounded={3} boxShadow="lg"  px={2} my={4} py={4} 
     marginBottom={"0"} pt={5} maxH={"full"}  display={'flex'}>
     <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
         
@@ -138,7 +132,7 @@ function AboutPage(){
             <Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
             bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}} >Bachelor's Degree in IT Technician</Text>
             </Box>
-          <Box p={4} bg={"gray.50"} rounded={4}><Text textAlign={{base:"justify", md:"justify",lg:"start"}}  color={"gray.600"}>
+          <Box p={4} bg={"gray.700"}><Text textAlign={"center"}  color={"gray.500"}>
             Professional bachelor Technician Specialized in Computer Science.</Text></Box>
           </SimpleGrid>
           </Box>

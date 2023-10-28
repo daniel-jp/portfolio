@@ -6,7 +6,7 @@ import ContactComponent2 from '../components/contactComponent/ContactComponent2'
 function ContactPage() {
     return (
 <>
-<Stack  bg={"gray.800"} minH={"100vh"} pt={50}>
+<Stack minH={"100vh"} pt={50}>
     <SimpleGrid p={{base:3, sm:3, md:3,lg:100}} 
                 columns={{base:1,sm:1, md:1,lg:2}} 
                 spacing={{ base: 2,sm:2, md: 4 }}>

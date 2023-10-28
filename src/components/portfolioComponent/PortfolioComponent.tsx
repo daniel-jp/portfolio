@@ -21,7 +21,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:PortfolioData){
       zIndex:"1",}} height={190} justifyContent={"center"}>
 
  {/* */}
-   <Card  opacity='0.9'   w={"full"} h={"full"} bg={"blackAlpha.900"} zIndex={-1} align={"center"}>
+   <Card  opacity='0.9' w={"full"} h={"full"} bg={"blackAlpha.600"} zIndex={-1} align={"center"}>
           
     <CardHeader mb={-4} textAlign={"center"}>
       <Heading color={"#FFFFFF"} fontWeight={"bold"} fontSize={["sm","mg","lg"]} > {titlec}</Heading>
@@ -34,7 +34,8 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:PortfolioData){
         <Link shadow={"Dark-lg"} bg={"gray.700"} px={10} alignItems={"center"}
         rounded={"full"} display={"flex"}>
           <Text fontWeight={"bold"} color={"white"}> visit website</Text>
-         <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"blue.50"} _hover={{
+         <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"blue.50"} 
+         _hover={{
           cursor:"pointer"
          }}/></Link>
     </CardFooter>

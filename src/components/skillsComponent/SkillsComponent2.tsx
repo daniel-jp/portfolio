@@ -5,7 +5,7 @@ function SkillsComponent2({language,text,img}:{ language: string, text: string, 
 
   return(
    <>
-      <Stack py={'5'} bg={"gray.200"} w={"full"} 
+      <Stack py={'5'} w={"full"} 
      
      // borderColor={useColorModeValue('gray.800', 'gray.500')}
       rounded={'lg'}>
@@ -14,7 +14,7 @@ function SkillsComponent2({language,text,img}:{ language: string, text: string, 
           <FormLabel fontWeight={"800"}  color={"orange.500"} isTruncated>
             {language}
           </FormLabel>
-          <FormLabel color={"gray.600"} fontSize={["sm","md","2xl"]} fontWeight={'medium'}>
+          <FormLabel color={"gray.500"} fontSize={["sm","md","2xl"]} fontWeight={'medium'}>
             {text} 
           </FormLabel>
         </Box> 

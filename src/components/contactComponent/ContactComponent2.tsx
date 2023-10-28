@@ -5,10 +5,10 @@ export default function  ContactComponent2(){
 
    return (
      <>
-    <Stack    w={'full'}  bg={"blackAlpha.600"} my={"5%"} p={{base:"4", sm:"4",md:"4",lg:"10"}} rounded={6}>
+    <Stack    w={'full'}  my={"5%"} p={{base:"4", sm:"4",md:"4",lg:"10"}} rounded={6}>
           <form>
             <FormControl mb={3}>
-              <FormLabel color={'gray.300'}> Your name</FormLabel>
+              <FormLabel color={'gray.500'}> Your name</FormLabel>
 
                     <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement children={<InfoIcon  color="purple.500" />} />
@@ -27,7 +27,7 @@ export default function  ContactComponent2(){
                   </FormControl>
 
                   <FormControl mb={3}>
-                        <FormLabel color={'gray.300' }> Email </FormLabel>
+                        <FormLabel color={'gray.500' }> Email </FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement children={<EmailIcon color="purple.500" />} />
                           <Input bg={"gray.700"} color={"gray.200"} fontWeight={"700"}
@@ -45,7 +45,7 @@ export default function  ContactComponent2(){
                       
 
                     <FormControl mb={3} >
-                        <FormLabel color={'gray.300'}> Message </FormLabel>
+                        <FormLabel color={'gray.500'}> Message </FormLabel>
                         <Textarea  bg={"gray.700"}  border={"none"} color={"gray.200"} fontWeight={"700"}
                           _hover={{  
                             border:"2px solid #805AD5",

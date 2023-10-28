@@ -14,15 +14,13 @@ const serviceProps = ServiceProps();
       justify={'center'} pb={20}
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>
- 
-
         <Stack spacing={4} as={Container} pt={50} pb={5}  maxW={'4xl'} textAlign={'center'}>
         <Heading bgGradient='linear(to-l,#944CAD, #3E91C0, #3E91C0, #3E91C0)' 
     bgClip='text'fontSize={{ base: '2xl', sm: '4xl' }}  textAlign={{base:"center", md:"end"}} 
     fontWeight={'bold'}>
         My services
         </Heading>
-        <Text color={'gray.800'} fontSize={{ base: '2xl', sm: '2xl', md:'3xl' }}>
+        <Text fontSize={{ base: '2xl', sm: '2xl', md:'3xl' }}>
         I would like to illustrate the areas where I work and the types of services I do.
         </Text>
       </Stack>

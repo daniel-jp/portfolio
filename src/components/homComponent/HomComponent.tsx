@@ -9,7 +9,7 @@ export default function homComponent() {
 
 
   return (
-  <Box 
+  <Box  
       justifyContent={"center"} 
       textAlign={'center'} h={"100vh"} overflowX={"hidden"}>
   
@@ -41,14 +41,13 @@ export default function homComponent() {
          
         <Stack>
         <Text p={2} fontFamily={"'Inter', sans-serif"} fontWeight={"bold"}
-        fontSize={['2xl', '2xl', '2xl', '5xl']} pt={{base:2, md:10}} as={'span'} 
-          >
-               Daniel Joaquim Paulino
+        fontSize={['2xl', '2xl', '2xl', '5xl']} pt={{base:2, md:10}} as={'span'} >
+            Daniel Joaquim Paulino
             </Text>
             </Stack> 
           <Stack>
-        <Text as={'span'} fontSize={['1xl', '2xl', '2xl', '4xl']}
-              > And I’m a  Software and Data Engineer</Text>
+        <Text as={'span'} fontSize={['1xl', '2xl', '2xl', '4xl']}> 
+        And I’m a  Software and Data Engineer</Text>
         </Stack>
 
     </Stack>
@@ -80,12 +79,12 @@ export default function homComponent() {
       <Box>
         <Text px={3} py={1} rounded={6}  
         fontSize={{base:"1xl", sm:"2xl",md:"2xl"}} 
-        textAlign={"center"} color={"gray.600"} >
+        textAlign={"center"} color={"gray.500"} >
                 Ready to take on new challenges in case of a job ou Freelance opportunity. I am actively looking for job in the fields of Software/Web Development and interested in Data.
       </Text>
       </Box>
       <Box pt={10}>
-      <Button  maxW={'full'} 
+      <Button as={'a'} href="/src/pages/pdf/Daniel_cv_EN.pdf" download maxW={'full'} 
                   rounded={'full'} fontWeight={'normal'}
                   colorScheme={'red'}
                   bg={'#944CAD'}

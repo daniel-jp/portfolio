@@ -16,8 +16,9 @@ import {
 } from '@chakra-ui/react';
 
 import { NAV_ITEMS } from '../../utils/navItems.ts';
-import DesktopNav from './DesktopNav.tsx';
 import Logo from '../Logo.tsx';
+import ThemeSelector from '../Theme/ThemeSelector.tsx';
+import DesktopNav from './DesktopNav.tsx';
 
 
 
@@ -58,9 +59,11 @@ export default function NavBar() {
           />
         </Flex>
         <Flex 
-              flex={{ base: 1 }} justify={{ base: 'center', md: 'start'}}>
+              flex={{ base: 1 }} 
+              justify={{ base: 'center', md: 'start'}} align={'center'}>
+
           <Text fontSize={'md'} fontWeight={600}
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+            textAlign={{ base: 'center', md: 'left'}}
             fontFamily={'heading'}
             color={"gray.800"}>
             <Logo/>
@@ -76,9 +79,8 @@ export default function NavBar() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-            Sign In
-          </Button>
+
+          
           <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
@@ -92,6 +94,10 @@ export default function NavBar() {
             }}>
             Sign Up
           </Button>
+
+          <ThemeSelector/>
+
+
         </Stack>
       </Flex>
 
