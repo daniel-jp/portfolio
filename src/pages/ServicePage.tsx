@@ -10,7 +10,7 @@ const serviceProps = ServiceProps();
     <>
     <Layout>
 
-    <Flex  display={"block"}
+    <Flex mx={{base:0, sm:2, md:3, lg:20}} display={"block"}
       justify={'center'} pb={20}
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>

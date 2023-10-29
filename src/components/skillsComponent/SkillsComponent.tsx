@@ -6,7 +6,7 @@ function SkillsComponent({language,text,img}:{ language: string, text: string, i
 
   return(
    <>
-      <Stack py={'5'}  w={"full"} 
+      <Stack py={'5'}  w={"full"}
       
      // borderColor={useColorModeValue('gray.100', 'gray.500')}
       rounded={'md'}>

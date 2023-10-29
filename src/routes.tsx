@@ -29,7 +29,7 @@ export default function Routes() {
         <Route path='service' element={<ServicePage/>} ></Route>
         <Route path='portfolio' element={<PortfolioPage />} ></Route>
         <Route path="skills" element={<SkillPage/>}>
-        <Route path="job" element={<Test/>}/>
+            <Route path="job" element={<Test/>}/>
         </Route>
         <Route path="contact" element={<ContactPage/>}></Route>
         

@@ -21,19 +21,19 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:PortfolioData){
       zIndex:"1",}} height={190} justifyContent={"center"}>
 
  {/* */}
-   <Card  opacity='0.9' w={"full"} h={"full"} bg={"blackAlpha.600"} zIndex={-1} align={"center"}>
+   <Card  opacity='1.0' w={"full"} h={"full"} bg={"gray.900"} zIndex={-1} align={"center"}>
           
     <CardHeader mb={-4} textAlign={"center"}>
-      <Heading color={"#FFFFFF"} fontWeight={"bold"} fontSize={["sm","mg","lg"]} > {titlec}</Heading>
+      <Heading color={"pink.600"} fontWeight={"bold"} fontSize={["sm","mg","lg"]} > {titlec}</Heading>
     </CardHeader>
     <CardBody pt={-2}>
       <Text textAlign={"center"} fontSize={['md','md']}  fontWeight={"bold"} color={"gray.100"} >{textc}</Text>
      
     </CardBody>
      <CardFooter pt={-4}>
-        <Link shadow={"Dark-lg"} bg={"gray.700"} px={10} alignItems={"center"}
+        <Link shadow={"Dark-lg"} bg={"gray.700"} px={5} alignItems={"center"}
         rounded={"full"} display={"flex"}>
-          <Text fontWeight={"bold"} color={"white"}> visit website</Text>
+          <Text fontWeight={"bold"} color={"pink.500"}> Visit website</Text>
          <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"blue.50"} 
          _hover={{
           cursor:"pointer"

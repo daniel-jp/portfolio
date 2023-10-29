@@ -16,11 +16,11 @@ function AboutPage(){
   return(
     <>
     <Layout>
-      <Flex   textAlign={'center'}  px={3} py={3}
+      <Flex textAlign={'center'}  px={3} py={3}
             pt={50} justify={'center'} w={"full"} display={'block'} 
             direction={{ base: 'column', sm: 'row' }}>
 
-        <Stack  w={"full"} m={{base:0, sm:2, md:3, lg:10}} px={4}  pb={10} textAlign={"start"}>
+        <Stack  w={"full"} mx={{base:0, sm:2, md:3, lg:10}} px={4}  pb={10} textAlign={"start"}>
           <Heading fontSize={['2xl', '3xl', '4xl']} 
                   bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
                   bgClip='text'> About, me
@@ -29,7 +29,7 @@ function AboutPage(){
             <Heading 
             textAlign={{base:"center", md:"center",
             lg:"start"}} pl={10} pr={10} fontFamily={"'inter',sans-serif"}
-            fontSize={['md', 'lg','3xl']} pt={5} color={"gray.800"}>
+            fontSize={['md', 'lg','3xl']} pt={5} color={"gray.600"}>
               Software and Data Engineer
             </Heading>
 
@@ -37,7 +37,7 @@ function AboutPage(){
             I'm Daniel Paulino, of Angolan nationality, I live in Morocco for academic training reasons..
             </Text>
           </Stack>
-          <Box m={{base:0, sm:2, md:3, lg:10}}>
+          <Box mx={{base:0, sm:2, md:3, lg:20}}>
             <SimpleGrid columns={{ base: 1,sm:1, md:1,lg:3}} spacing={{ base: 2, md: 2 }}>
               {
                 aboutProp.map(( aboutprop ) => (
@@ -53,7 +53,7 @@ function AboutPage(){
     </Box>
   
 
-  <Box m={{base:0, sm:2, md:3, lg:10}}>
+  <Box mx={{base:0, sm:2, md:3, lg:20}}>
 
         <Box textAlign={'initial'} mt={10} display={"block"}>
           <Text fontSize={{sm:"1xl",md:"2xl",lg:"3xl"}} fontFamily={"'Inter', sans-serif"}>EDUCATION</Text>

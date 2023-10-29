@@ -9,12 +9,12 @@ export default function homComponent() {
 
 
   return (
-  <Box  
+  <Box  mx={{base:0, sm:2, md:3, lg:20}}
       justifyContent={"center"} 
       textAlign={'center'} h={"100vh"} overflowX={"hidden"}>
   
 
-    <Flex   m={3} display={{sm:'flex', md:'wrap'}}>
+    <Flex  display={{sm:'flex', md:'wrap'}}>
 
       <Stack flexGrow={1} flexWrap={"wrap-reverse"} justify={'center'} 
             pl={{sm:3, md: 20, lg:24}} pt={5}>

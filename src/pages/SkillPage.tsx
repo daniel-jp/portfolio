@@ -15,7 +15,7 @@ function SkillPage (){
       <div>
     <Layout>
 
-    <Box  pt={5} pb={10} p={{base:3,sm:3, md:3}}>
+    <Box  pt={5} pb={10} mx={{base:0, sm:2, md:3, lg:20}}>
     <chakra.h1 
             bgGradient='linear(to-l, #CA58F2, #3E91C0, #3E91C0, #CA58F2, #CA58F2, #CA58F2)' 
             bgClip='text'

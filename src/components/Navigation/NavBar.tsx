@@ -3,18 +3,24 @@ import '@fontsource/inter/600.css';
 import { ChevronDownIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
-  Button,
   Collapse,
   Flex,
+  HStack,
   Icon,
   IconButton,
+  Menu,
+  MenuButton,
+  MenuList,
   Stack,
   Text,
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import { Globe } from '@phosphor-icons/react';
 
+import Language from '../../props/propLanguage/Language.ts';
 import { NAV_ITEMS } from '../../utils/navItems.ts';
+import LanguageComponent from '../language/LanguageComponent.tsx';
 import Logo from '../Logo.tsx';
 import ThemeSelector from '../Theme/ThemeSelector.tsx';
 import DesktopNav from './DesktopNav.tsx';
@@ -31,6 +37,9 @@ interface NavItem {
 }
 
 export default function NavBar() {
+
+const languages = Language();
+
   const { isOpen, onToggle } = useDisclosure()
 
   return (
@@ -73,28 +82,50 @@ export default function NavBar() {
           </Flex>
         </Flex>
 
-        <Stack
+        <Stack 
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
 
           
-          <Button
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
-            href={'#'}
-            _hover={{
-              bg: 'pink.300',
-            }}>
-            Sign Up
-          </Button>
+        <ThemeSelector/>
+         
+      <HStack spacing={{ base: '0', md: '6' }}>
+        <Flex alignItems={'center'} >
+          <Menu>
+            <MenuButton 
+              transition="all 0.3s"
+              _focus={{ boxShadow: 'none'}}>
+              <HStack>
+                 <Stack p={1} bg="gray.700"
+                   color="white" borderRadius={"50%"}
+                 _hover={{cursor:"pointer", bg:"gray.600",}}
+                     display={{ base: 'flex', md: 'flex' }}>
+                  <Globe color='white' size={26} />
+                </Stack>
+              </HStack>
+            </MenuButton>
 
-<ThemeSelector/>
+            <MenuList
+              bg={useColorModeValue('gray.700', 'gray.900')}
+              borderColor={useColorModeValue('gray.800', 'gray.700')}>
+
+            { languages.map((value, index) => (
+
+            <LanguageComponent
+                index={index}
+                id={value.id}
+                language={value.language}
+                img={value.img}/>
+
+              ))
+            }
+            </MenuList>
+          </Menu>
+          
+        </Flex>
+      </HStack>
 
 
         </Stack>
