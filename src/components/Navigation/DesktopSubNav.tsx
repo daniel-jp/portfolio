@@ -1,6 +1,5 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Box, Flex, Icon, Stack, Text, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
 
 interface NavItem {
   label: string;

@@ -1,5 +1,4 @@
 import { Flex, SimpleGrid, Stack } from '@chakra-ui/react';
-import React from 'react';
 
 import ContactComponent from '../components/contactComponent/ContactComponent';
 import ContactComponent2 from '../components/contactComponent/ContactComponent2';

@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, IconButton, Link, Text, VStack } from '@chakra-ui/react';
 import { At, MapPin, PhoneOutgoing } from '@phosphor-icons/react';
-import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 
 function ContactComponent(){

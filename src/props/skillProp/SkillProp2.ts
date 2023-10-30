@@ -1,5 +1,3 @@
-import React from 'react';
-
   export default function SkillProp2(){
 
   const skillprop2=[

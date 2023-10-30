@@ -18,7 +18,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { Globe } from '@phosphor-icons/react';
-import React from 'react';
 
 import Language from '../../props/propLanguage/Language';
 import { NAV_ITEMS } from '../../utils/navItems';

@@ -1,7 +1,6 @@
 import '@fontsource/inter/800.css';
 
 import { Box, Flex, FormLabel, Image, Stack, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
 
 function SkillsComponent({language,text,img}:{ language: string, text: string, img: string }){
 

@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react';
-import React from 'react';
 
 import HomComponent from '../components/homComponent/HomComponent';
 import Layout from '../layouts/Layout';

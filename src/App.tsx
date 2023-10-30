@@ -1,5 +1,4 @@
 import { Box, ChakraProvider, CSSReset } from '@chakra-ui/react';
-import React from 'react';
 import { RouterProvider } from 'react-router';
 
 import Footer from './components/Footer/Footer';
@@ -14,12 +13,14 @@ function App() {
   
   return (
     <>
+     <ChakraProvider>
     <CSSReset/>
     <NavBar /> 
         <Box p={2}>
           <RouterProvider router={Routes()} />
      </Box>
   <Footer/>
+  </ChakraProvider>
  </>
   )
 }

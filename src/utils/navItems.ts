@@ -1,4 +1,3 @@
-import React from 'react';
 
 // navItems.ts
 interface NavItem {
