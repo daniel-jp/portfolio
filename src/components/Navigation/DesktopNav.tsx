@@ -2,9 +2,11 @@ import '@fontsource/inter/700.css';
 
 import { Box, Popover, PopoverContent, PopoverTrigger, Stack, useColorModeValue } from '@chakra-ui/react';
 import { Link as ChakraLink } from '@chakra-ui/react';
+import React from 'react';
 
-import { NAV_ITEMS } from '../../utils/navItems.ts';
+import { NAV_ITEMS } from '../../utils/navItems';
 import DesktopSubNav from '../Navigation/DesktopSubNav';
+
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.500', 'gray.200')

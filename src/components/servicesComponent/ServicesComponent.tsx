@@ -11,7 +11,7 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-
+import React from 'react';
 
 function Services({icon, title,text,button}:any){
   return( 

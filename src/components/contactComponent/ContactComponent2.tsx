@@ -1,5 +1,6 @@
 import { EmailIcon, InfoIcon } from '@chakra-ui/icons';
 import { Button, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Stack, Textarea } from '@chakra-ui/react';
+import React from 'react';
 
 export default function  ContactComponent2(){
 

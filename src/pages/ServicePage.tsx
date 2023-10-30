@@ -1,4 +1,5 @@
 import { Box, Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import React from 'react';
 
 import ServiceComponent from '../components/servicesComponent/ServicesComponent';
 import Layout from '../layouts/Layout';

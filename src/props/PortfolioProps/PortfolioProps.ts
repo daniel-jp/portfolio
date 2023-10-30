@@ -1,4 +1,5 @@
 import { ArrowSquareOut } from '@phosphor-icons/react';
+import React from 'react';
 
 
 export default function PortfolioProps(){

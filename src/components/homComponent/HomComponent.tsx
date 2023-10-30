@@ -2,6 +2,7 @@ import '@fontsource/inter/600.css';
 
 import { Box, Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import { ArrowCircleDown } from '@phosphor-icons/react';
+import React from 'react';
 
 export default function homComponent() {
 

@@ -1,4 +1,5 @@
 import { Box, chakra, SimpleGrid, Text } from '@chakra-ui/react';
+import React from 'react';
 
 import SkillsComponent from '../components/skillsComponent/SkillsComponent';
 import SkillsComponent2 from '../components/skillsComponent/SkillsComponent2';

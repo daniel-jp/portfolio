@@ -8,6 +8,7 @@ import {
   HStack,
   Icon,
   IconButton,
+  Link,
   Menu,
   MenuButton,
   MenuList,
@@ -17,13 +18,14 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { Globe } from '@phosphor-icons/react';
+import React from 'react';
 
-import Language from '../../props/propLanguage/Language.ts';
-import { NAV_ITEMS } from '../../utils/navItems.ts';
-import LanguageComponent from '../language/LanguageComponent.tsx';
-import Logo from '../Logo.tsx';
-import ThemeSelector from '../Theme/ThemeSelector.tsx';
-import DesktopNav from './DesktopNav.tsx';
+import Language from '../../props/propLanguage/Language';
+import { NAV_ITEMS } from '../../utils/navItems';
+import LanguageComponent from '../language/LanguageComponent';
+import Logo from '../Logo';
+import ThemeSelector from '../Theme/ThemeSelector';
+import DesktopNav from './DesktopNav';
 
 
 
@@ -70,12 +72,12 @@ const languages = Language();
               flex={{ base: 1 }} 
               justify={{ base: 'center', md: 'start'}} align={'center'}>
 
-          <Text fontSize={'md'} fontWeight={600}
+          <Link as={"a"}  href={'/home'} fontSize={'md'} fontWeight={600}
             textAlign={{ base: 'center', md: 'left'}}
             fontFamily={'heading'}
             color={"gray.800"}>
             <Logo/>
-          </Text>
+          </Link>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />

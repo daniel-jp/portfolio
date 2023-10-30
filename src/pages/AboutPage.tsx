@@ -2,6 +2,7 @@ import '@fontsource/inter/600.css';
 
 import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CalendarCheck } from '@phosphor-icons/react';
+import React from 'react';
 
 import AboutComponent from '../components/aboutComponent/AboutComponent';
 import Layout from '../layouts/Layout';

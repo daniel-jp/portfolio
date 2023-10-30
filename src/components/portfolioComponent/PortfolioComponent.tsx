@@ -1,4 +1,5 @@
 import { Card, CardBody, CardFooter, CardHeader, Flex, Heading, Icon, Link, Text } from '@chakra-ui/react';
+import React from 'react';
 
 interface PortfolioData {
   iconc: any;

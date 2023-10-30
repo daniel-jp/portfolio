@@ -1,6 +1,8 @@
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 import { InstagramLogo, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { ReactNode } from 'react';
+import React from 'react';
+
 import Logo2 from '../Logo2';
 
 'use client'
