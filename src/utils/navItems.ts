@@ -1,91 +1,81 @@
-
 // navItems.ts
-interface NavItem {
-  id:string,
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
-}
 
-export const NAV_ITEMS: Array<NavItem> = [
+export const NAV_ITEMS = [
   {
-    id:"1",
-    label: 'Home',
-    href: '/home',
+    id:"home_id",
+    name: "Home",
+    path: "/",
   },
   {
-    id:"2",
-    label: 'About',
-    href: '/about',
+    id:"about_id",
+    name: "About",
+    path: "/about",
   },
   {
-    id:"3",
-    label: 'Services',
-    href: '/service',
+    id:"service_id",
+    name: "Services",
+    path: "/service",
     children: [
       {
-        id:"1",
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
+        name: "Explore Design Work",
+        subName: "Trending Design to inspire you",
+        path: "#",
       },
       {
-        id:"2",
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
+        name: "New & Noteworthy",
+        subName: "Up-and-coming Designers",
+        path: "#",
       },
     ],
   },
   {
-    id:"4",
-    label: 'Portfolio',
-    href:'/portfolio',
+    id:"portfolio_id",
+    name: "Portfolio",
+    path:"/portfolio",
     children: [
       {
-        id:"1",
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
+       
+        name: "Job Board",
+        subName: "Find your dream design job",
+        path: "/job",
       },
       {
-        id:"2",
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
+        
+        name: "Freelance Projects",
+        subName: "An exclusive list for contract work",
+        path: "#",
       },
     ],
   },
   {
-    id:"5",
-    label: 'Skills',
-    href:'/skills',
+    id:"skill_id",
+    name: "Skills",
+    path:"/skills",
     children: [
       {
-        id:"1",
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '/job',
+       
+        name: "Job Board",
+        subName: "Find your dream design job",
+        path: "/job",
       },
       {
-        id:"2",
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
+        
+        name: "Freelance Projects",
+        subName: "An exclusive list for contract work",
+        path: "#",
       },
     ],
   },
 
   {
-    id:"6",
-    label: 'Blog',
-    href: '#',
+    id:"blog_id",
+    name: "Blog",
+    path: "#",
   },
 
   {
-    id:"7",
-    label: 'Contact',
-    href: '/contact',
+    id:"contat_id",
+    name: "Contact",
+    path: "/contact",
   },
 ];

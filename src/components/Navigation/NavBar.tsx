@@ -28,14 +28,13 @@ import DesktopNav from './DesktopNav';
 
 
 
-// WithSubnavigation function as MAIN
-
 interface NavItem {
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
+  name: string
+  children?: Array<NavItem>
+  path?: string
 }
+
+// WithSubnavigation function as MAIN
 
 export default function NavBar() {
 
@@ -71,7 +70,7 @@ const languages = Language();
               flex={{ base: 1 }} 
               justify={{ base: 'center', md: 'start'}} align={'center'}>
 
-          <Link as={"a"}  href={'/home'} fontSize={'md'} fontWeight={600}
+          <Link as={"a"}  href={'/'} fontSize={'md'} fontWeight={600}
             textAlign={{ base: 'center', md: 'left'}}
             fontFamily={'heading'}
             color={"gray.800"}>
@@ -146,7 +145,7 @@ const MobileNav = () => {
   return (
     <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
+        <MobileNavItem key={navItem.name} {...navItem}  />
       ))}
     </Stack>
   )
@@ -154,7 +153,7 @@ const MobileNav = () => {
 
 
 // MobileNavItem function
-const MobileNavItem = ({ label, children, href }: NavItem) => {
+const MobileNavItem = ({ name, children, path }:NavItem) => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
@@ -162,14 +161,14 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       <Box
         py={2}
         as="a"
-        href={href ?? '#'}
+        href={path ?? '#'}
         justifyContent="space-between"
         alignItems="center"
         _hover={{
           textDecoration: 'none',
         }}>
         <Text color={useColorModeValue('gray.600', 'gray.200')}>
-          {label}
+          {name}
         </Text>
         {children && (
           <Icon
@@ -192,8 +191,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           align={'start'}>
           {children &&
             children.map((child) => (
-              <Box as="a" key={child.label} py={2} href={child.href}>
-                {child.label}
+              <Box as="a" key={child.name} py={2} href={child.path}>
+                {child.name}
               </Box>
             ))}
         </Stack>

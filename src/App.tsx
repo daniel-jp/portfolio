@@ -3,7 +3,7 @@ import { RouterProvider } from 'react-router';
 
 import Footer from './components/Footer/Footer';
 import NavBar from './components/Navigation/NavBar';
-import Routes from './Router';
+import Routes from './Routes';
 
 
 
@@ -15,9 +15,9 @@ function App() {
     <>
      <ChakraProvider>
     <CSSReset/>
-    <NavBar /> 
+    <NavBar />
         <Box p={2}>
-          <RouterProvider router={Routes()} />
+        <RouterProvider router={Routes()} />
      </Box>
   <Footer/>
   </ChakraProvider>

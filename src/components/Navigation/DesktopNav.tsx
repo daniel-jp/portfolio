@@ -1,7 +1,6 @@
 import '@fontsource/inter/700.css';
 
 import { Box, Popover, PopoverContent, PopoverTrigger, Stack, useColorModeValue } from '@chakra-ui/react';
-import { Link as ChakraLink } from '@chakra-ui/react';
 
 import { NAV_ITEMS } from '../../utils/navItems';
 import DesktopSubNav from '../Navigation/DesktopSubNav';
@@ -20,13 +19,12 @@ const DesktopNav = () => {
         <Box key={navItem.id}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
-              <ChakraLink
+              <Box
                as='a' 
-               href={navItem.href ?? '#'}
+               href={navItem.path ?? '#'}
                 p={2}
                
-               
-                fontSize={'md'} 
+                fontSize={'md'}
                 fontWeight={'400'} fontFamily={"'Inter',sans-serif"}
                 color={linkColor}
                 
@@ -35,8 +33,8 @@ const DesktopNav = () => {
                   color: linkHoverColor,
                 
                 }}>
-                {navItem.label}
-              </ChakraLink>
+                {navItem.name}
+              </Box>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -50,7 +48,7 @@ const DesktopNav = () => {
                 <Stack>
                   {navItem.children.map((child) => (
                     <DesktopSubNav
-                    key={child.id} {...child} />
+                    key={child.name} {...child} />
                   ))}
                 </Stack>
               </PopoverContent>

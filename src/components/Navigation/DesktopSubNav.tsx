@@ -2,15 +2,14 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Box, Flex, Icon, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 
 interface NavItem {
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
+  name: string;
+  subName?: string;
+  path?: string;
 }
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+const DesktopSubNav = ({ name,subName, path }: NavItem) => {
   return (
     <Box
-      as="a" href={href}
+      as="a" href={path}
       role={'group'} p={2}
       display={'block'}
       rounded={'md'}
@@ -21,9 +20,9 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
             transition={'all .3s ease'}
             _groupHover={{ color: 'pink.400' }}
             fontWeight={500}>
-            {label}
+            {name}
           </Text>
-          <Text fontSize={'sm'}>{subLabel}</Text>
+          <Text fontSize={'sm'}>{subName}</Text>
         </Box>
         <Flex
           transition={'all .3s ease'}
