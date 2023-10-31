@@ -82,15 +82,12 @@ const languages = Language();
           </Flex>
         </Flex>
 
-        <Stack 
+        <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-
-          
         <ThemeSelector/>
-         
       <HStack spacing={{ base: '0', md: '6' }}>
         <Flex alignItems={'center'} >
           <Menu>
@@ -118,17 +115,15 @@ const languages = Language();
                 id={value.id}
                 language={value.language}
                 img={value.img}/>
-
               ))
             }
             </MenuList>
           </Menu>
           
         </Flex>
-      </HStack>
+       </HStack>
 
-
-        </Stack>
+      </Stack>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>

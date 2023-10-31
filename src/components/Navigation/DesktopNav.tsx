@@ -12,7 +12,6 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 
 
-
   return (
     <Stack direction={'row'} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
@@ -21,7 +20,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Box
                as='a' 
-               href={navItem.path ?? '#'}
+               href={navItem.path ?? '/'}
                 p={2}
                
                 fontSize={'md'}
