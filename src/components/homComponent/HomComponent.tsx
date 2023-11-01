@@ -65,9 +65,9 @@ export default function homComponent() {
               alt={'Daniel'}
               fit={'cover'}
               align={'center'}
-              src={`${'../../public/danny1.png'}`
-               
-              }/>
+              src={`${"/public/danny1.png"}`}
+              
+              />
 
         
     </Stack>
