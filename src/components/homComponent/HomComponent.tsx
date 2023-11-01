@@ -62,11 +62,11 @@ export default function homComponent() {
              <Image rounded={{sm:"2%", md:"3%", lg:"50%"}} 
               h={{sm:200, md:240, lg:260}}
               w={{sm:200, md:240, lg:260}}
-              alt={'Daniel Image'}
+              alt={'Daniel'}
               fit={'cover'}
               align={'center'}
-              src={
-                '../../public/danny1.png'
+              src={`${'../../public/danny1.png'}`
+               
               }/>
 
         
