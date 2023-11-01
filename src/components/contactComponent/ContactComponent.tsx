@@ -35,7 +35,7 @@ function ContactComponent(){
           color={"gray.500" } fontSize={["sm","md"]} > 
            <MapPin size={32} /> Rabat-Morocco
           </Text>
-         <Box pt={{base:0, sm:2, md:3, lg:16}} > <Text> SOCIAL MIDIA</Text> </Box>
+         <Box pt={{base:3, sm:3, md:4, lg:16}} > <Text> SOCIAL MIDIA</Text> </Box>
         <Flex  align={"center"}>
         
           <Box mr={4} >

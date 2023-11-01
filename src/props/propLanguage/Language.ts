@@ -5,17 +5,17 @@ export default function Language() {
   {
     id: 1,
     language:"Portuguese",
-    img:"pt.png"
+    img:"../../../public/assets/flag/pt.png"
   },
   {
     id: 2,
     language:"French",
-    img:"fr.png"
+    img:"../../../public/assets/flag/fr.png"
   },
   {
     id: 3,
     language:"English",
-    img:"uk.png"
+    img:"../../../public/assets/flag/uk.png"
   },
   
 ]

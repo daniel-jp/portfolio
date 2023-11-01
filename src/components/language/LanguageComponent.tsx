@@ -9,7 +9,7 @@ export default function LanguageComponent({language, img}: any) {
 
               <Text as={'span'}>{language}</Text>
 
-              <Image w={4} h={4} src={`/public/assets/flag/${img}`} />
+              <Image w={4} h={4} src={`${img}`} />
               </MenuItem>
 
   )

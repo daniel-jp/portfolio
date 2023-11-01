@@ -7,7 +7,7 @@ export default function  ContactComponent2(){
      <>
     <Stack   w={'full'} pt={{base:0, sm:2, md:3}}  rounded={6}>
       <Box> 
-        <Text fontSize={["md","xl"]}>Send me a message using the form, and I will give you a response as soon as possible.
+        <Text textAlign={"center"} fontSize={["md","xl"]}>Send me a message using the form, and I will give you a response as soon as possible.
         </Text>
       </Box>
           <form>

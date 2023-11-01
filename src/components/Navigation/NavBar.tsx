@@ -97,9 +97,9 @@ const languages = Language();
               <HStack>
                  <Stack p={1} bg="gray.700"
                    color="white" borderRadius={"50%"}
-                 _hover={{cursor:"pointer", bg:"gray.600",}}
+                   _hover={{cursor:"pointer", bg:"gray.600",}}
                      display={{ base: 'flex', md: 'flex' }}>
-                  <Globe color='white' size={26} />
+                  <Globe color='white' size={28} />
                 </Stack>
               </HStack>
             </MenuButton>

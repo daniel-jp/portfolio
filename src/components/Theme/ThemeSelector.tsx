@@ -8,9 +8,9 @@ function ThemeSelector(){
 
 return(
 
-  <Box >
+  <Box>
      <IconButton rounded={"50%"}
-      aria-label="Toggle color mode"
+           aria-label="Toggle color mode"
       icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       onClick={toggleColorMode}
     />
