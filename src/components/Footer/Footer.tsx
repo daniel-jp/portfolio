@@ -1,5 +1,5 @@
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
-import { InstagramLogo, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react';
+import { InstagramLogo, LinkedinLogo, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { ReactNode } from 'react';
 
 import Logo2 from '../Logo2';
@@ -34,18 +34,17 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
       rounded={'full'}
-      w={8}
+      w={8} bg={"purple.700"} 
       h={8}
       cursor={'pointer'}
-      as={'a'}
-      href={href}
+      as={'a'} 
+      href={href} color={"white"}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
       transition={'background 0.3s ease'}
-      _hover={{
+      _hover={{ color:"black",
         bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
       }}>
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -70,16 +69,21 @@ export default function Footer() {
         align={{ base: 'center', md: 'center' }}>
         <Logo2/>
         <Text>© 2023 Daniel portfolio. All rights reserved</Text>
+
+
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <TwitterLogo size={32} />
-          </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <YoutubeLogo size={32} />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
-            <InstagramLogo size={32} />
-          </SocialButton>
+        <SocialButton  label={'Twitter'} href={'#'}>
+            <LinkedinLogo size={22} />
+        </SocialButton>
+        <SocialButton  label={'Twitter'} href={'#'}>
+            <TwitterLogo size={22} />
+        </SocialButton>
+        <SocialButton label={'YouTube'} href={'#'}>
+            <YoutubeLogo size={22} />
+        </SocialButton>
+        <SocialButton label={'Instagram'} href={'#'}>
+            <InstagramLogo size={22} />
+        </SocialButton>
         </Stack>
       </Container>
     </Box>

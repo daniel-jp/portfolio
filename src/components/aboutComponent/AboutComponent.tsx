@@ -12,7 +12,7 @@ function AboutComponent ({ title,text,icon}:
    
       <Stat bg={"gray.700"}
             px={{ base:'2', md: '2' }}
-            boxShadow="lg" 
+            boxShadow="lg"
             py={'2'} rounded={'lg'}>
 
           <Flex mx={{base:1 , md:2}} justify={"space-between"}>

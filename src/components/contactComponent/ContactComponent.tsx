@@ -1,66 +1,99 @@
-import { Box, Flex, Heading, IconButton, Link, Text, VStack } from '@chakra-ui/react';
-import { At, MapPin, PhoneOutgoing } from '@phosphor-icons/react';
+import { Box, Flex, Heading, IconButton, Link, Text } from '@chakra-ui/react';
+import { At, InstagramLogo, LinkedinLogo, MapPin, PhoneOutgoing, TwitterLogo } from '@phosphor-icons/react';
 import { BsGithub } from 'react-icons/bs';
 
 function ContactComponent(){
   return(
    <>
-   <Flex  alignItems={"center"} display={"block"} w={"full"}  my={"5%"}> 
-          <VStack w={"full"} align={{base:"center", sm:"center", md:"center", lg:"start"}}> 
-            
-           
-                   <VStack mt={5} spacing={3}>
-                      <Heading  fontWeight={"bold"} fontSize={{base:'2xl', sm:'2xl',md:'5xl'}} 
-                     p={2} px={20}  
-                      bgGradient='linear(to-l,#944CAD,#944CAD,#3E91C0, #3E91C0)' bgClip='text' > 
-                      Contact
-                      </Heading>
-                   </VStack>
-
-                    <Text pt={2} fontSize={'md'} textAlign={'start'} color={"gray.600"}> 
-                    Fill up the form below to contact
-                    </Text> 
-    
-                    <Box>
-                     <Flex py={2} align={"center"} gap={2}>
-                      <Text color={"blue.700"}>
-                     <PhoneOutgoing size={32} /></Text><Text fontSize={["sm","md"]} color={"gray.500"}> +212 657 226 746</Text>
-                     </Flex>
-
-                    <Flex  pb={2}  align={"center"} gap={2}>
-                      <Text color={"blue.700"} >
-                      <At size={32} /></Text>
-                      <Text color={"gray.500"} fontSize={["sm","md"]}>danieljoaquimpaulinop@gmail.com
-                      </Text>
-                      </Flex>
-
-                      <Flex align={"center"} gap={2}>
-                      <Text color={"blue.700"} >
-                      <MapPin size={32} /></Text>
-                      <Text color={"gray.500" } fontSize={["sm","md"]} >  Rabat-Morocco
-                      </Text>
-                      </Flex>
-                    <Link as={"a"} >
-                      <Flex py={2} maxW={"full"} mt={2} align={"center"} 
-                      justify={"center"} gap={2} bg={"#222831"} 
-                      rounded={6}> 
-                      <IconButton bg={"purple.700"} 
-                      icon={<BsGithub color={"white"} size={22}/>}
-                      borderRadius="50%" 
-                      aria-label={'github'}
-                      _hover={{ transform: "scale(1.2)" }}
-                      _active={{ transform: "scale(0.9)" }}/>  
-                      <Text ml={2} color='white'> GitHub</Text>
-                    </Flex>
-
-                      </Link>
-                    </Box>
-                  </VStack> 
+   <Box  w={'full'} > 
+   <Heading fontWeight={"bold"} fontSize={{base:'2xl', sm:'2xl',md:'5xl'}} 
+              
+                bgGradient='linear(to-l,#944CAD,#944CAD,#3E91C0, #3E91C0)' bgClip='text' > 
+                Contact
+  </Heading>
  
+   
+            <Text flexGrow={1} display={"flex"}  fontSize={["md","xl"]} 
+            textAlign={'start'} color={"gray.600"}> 
+                    Fill up the form below to contact
+            </Text> 
+        
 
-        </Flex>
+       
+            <Text flexGrow={1} display={"flex"} fontSize={["sm","md"]} color={"gray.500"}> 
+            <PhoneOutgoing size={32} /> +212 657 226 746 </Text>
+         
+          
+         
+          <Text flexGrow={1} display={"flex"}  color={"gray.500"} fontSize={["sm","md"]}>
+              <At size={32} /> danieljoaquimpaulinop@gmail.com
+          </Text>
+        
+      
 
+          <Text flexGrow={1} display={"flex"} 
+          color={"gray.500" } fontSize={["sm","md"]} > 
+           <MapPin size={32} /> Rabat-Morocco
+          </Text>
+         <Box pt={{base:0, sm:2, md:3, lg:16}} > <Text> SOCIAL MIDIA</Text> </Box>
+        <Flex  align={"center"}>
+        
+          <Box mr={4} >
+          <Link as={"a"} >
+            <IconButton bg={"purple.700"} 
+            icon={<BsGithub color={"white"} size={22}/>}
+            borderRadius="50%" 
+            aria-label={'github'}
+            _hover={{ transform: "scale(1.2)" }}
+            _active={{ transform: "scale(0.9)" }}/>  
+          
+  
+       </Link>
+       </Box>
+        <Box m={4}>
+         <Link href={'#'}>
+         <IconButton bg={"purple.700"} 
+            icon={<TwitterLogo color={"white"} size={22}/>}
+            borderRadius="50%" 
+            aria-label={'github'}
+            _hover={{ transform: "scale(1.2)" }}
+            _active={{ transform: "scale(0.9)" }}/>  
+          
+  
+
+           
+         </Link>
+         </Box>
+         <Box m={4}>
+          <Link  href={'#'}>
+
+          <IconButton bg={"purple.700"} 
+            icon={<LinkedinLogo color={"white"} size={22}/>}
+            borderRadius="50%" 
+            aria-label={'github'}
+            _hover={{ transform: "scale(1.2)" }}
+            _active={{ transform: "scale(0.9)" }}/>  
+          
+
+         
+          </Link>
+          </Box>
+          <Box m={4} borderRadius="50%"   bg={"purple.700"}>
+          <Link href={'#'}>
+
+          <IconButton bg={"purple.700"} 
+            icon={<InstagramLogo color={"white"} size={22}/>}
+            borderRadius="50%" 
+            aria-label={'github'}
+            _hover={{ transform: "scale(1.2)" }}
+            _active={{ transform: "scale(0.9)" }}/>  
+        
+         </Link>
+
+         </Box>
+       </Flex>
+      </Box>
    </>
-  )
+  );
 }
-export default ContactComponent 
+export default ContactComponent
