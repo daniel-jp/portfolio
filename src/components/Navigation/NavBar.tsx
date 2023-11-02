@@ -43,8 +43,9 @@ const languages = Language();
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box>
-      <Flex
+    <Box zIndex={10}
+    position="relative">
+      <Flex  
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}

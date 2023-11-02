@@ -5,8 +5,9 @@ interface PortfolioData {
   titlec: string;
   textc: string;
   imgc: string;
+  href:string;
 }
-function PortfolioComponent({iconc, titlec,textc, imgc}:PortfolioData){
+function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
 
 
   return(
@@ -31,7 +32,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:PortfolioData){
      
     </CardBody>
      <CardFooter pt={-4}>
-        <Link shadow={"Dark-lg"} bg={"gray.700"} px={5} alignItems={"center"}
+        <Link href={`${href}`} shadow={"Dark-lg"} bg={"gray.700"} px={5} alignItems={"center"}
         rounded={"full"} display={"flex"}>
           <Text fontWeight={"bold"} color={"pink.500"}> Visit website</Text>
          <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"blue.50"} 

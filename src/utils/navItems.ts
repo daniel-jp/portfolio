@@ -37,7 +37,7 @@ export const NAV_ITEMS = [
        
         name: "Job Board",
         subName: "Find your dream design job",
-        path: "/job",
+        path: "portfolio/job",
       },
       {
         
@@ -56,7 +56,7 @@ export const NAV_ITEMS = [
        
         name: "Job Board",
         subName: "Find your dream design job",
-        path: "/job",
+        path: "skills/job",
       },
       {
         

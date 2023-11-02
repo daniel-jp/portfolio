@@ -30,11 +30,16 @@ export default function Routes() {
       <Route>
         <Route path="/" element={<pages.HomePage/>}/>
         <Route path="about" element={<pages.AboutPage/>}/>
-        <Route path='service' element={<pages.ServicePage/>} ></Route>
-        <Route path='portfolio' element={<pages.PortfolioPage />} ></Route>
+        <Route path="service" element={<pages.ServicePage/>} ></Route>
+
+        <Route path="portfolio" element={<pages.PortfolioPage />} >
+             <Route path="job" element={<pages.TestPage/>}/>
+        </Route>
+
         <Route path="skills" element={<pages.SkillPage/>}>
             <Route path="job" element={<pages.TestPage/>}/>
         </Route>
+        
         <Route path="contact" element={<pages.ContactPage/>}></Route>
         <Route path="*" element={<pages.Error />}></Route>
       </Route>

@@ -8,7 +8,7 @@ export default function Error() {
       <Layout>
         <Flex flexWrap={"wrap"} justify={"center"} align={"center"} w={"100%"}  h={"100vh"}>
           <Box p={1}>
-           <Image src='/public/assets/error-image.gif' />
+           <Image src='../../assets/error-image.gif' />
           </Box>
 
           <Box p={1}>

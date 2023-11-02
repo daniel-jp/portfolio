@@ -22,8 +22,8 @@ const portfolioprops = portfolioProps();
                 Latest Projects
         </Heading>
         <Text color={'gray.500'} textAlign={"center"} fontSize={{ base: '1xl', sm: '1xl', md:'2xl' }}>
-        On this page I present you my portfolio with projects carried out and those that 
-        are in the process of being carried out        
+        On this page I present you my portfolio with projects carried out and those that
+        are in the process of being carried out
         </Text>
       </Stack>
     <Box>
@@ -31,12 +31,13 @@ const portfolioprops = portfolioProps();
         {
           portfolioprops.map((portfoliop) => (
 
-            <PortfolioComponent 
+            <PortfolioComponent
+            href={portfoliop.href}
             imgc={portfoliop.imgc}
-            titlec={portfoliop.titlec} 
-            textc={portfoliop.textc} 
-            iconc={portfoliop.iconc} 
-            key={portfoliop.id} /> 
+            titlec={portfoliop.titlec}
+            textc={portfoliop.textc}
+            iconc={portfoliop.iconc}
+            key={portfoliop.id} />
 
           ))
         }
