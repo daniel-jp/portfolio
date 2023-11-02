@@ -65,7 +65,7 @@ export default function homComponent() {
               alt={'Daniel'}
               fit={'cover'}
               align={'center'}
-              src={"../../../dist/danny1.png"}
+              src={'/src/assets/image/danny1.png'}
               
               />
 
