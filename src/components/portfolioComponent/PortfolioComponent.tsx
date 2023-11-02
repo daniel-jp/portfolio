@@ -32,13 +32,13 @@ function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
      
     </CardBody>
      <CardFooter pt={-4}>
-        <Link href={`${href}`} shadow={"Dark-lg"} bg={"gray.700"} px={5} alignItems={"center"}
-        rounded={"full"} display={"flex"}>
-          <Text fontWeight={"bold"} color={"pink.500"}> Visit website</Text>
-         <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"blue.50"} 
-         _hover={{
-          cursor:"pointer"
-         }}/></Link>
+        <Link  href={`${href}`} target="_blank" shadow={"Dark-lg"} 
+        alignItems={"center"} w={8} h={8} bg={"gray.500"}>
+         
+         <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"pink.800"} 
+         _hover={{cursor:"pointer"}}/>
+         
+         </Link>
     </CardFooter>
   </Card>
 

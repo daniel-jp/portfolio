@@ -9,7 +9,7 @@ export default function PortfolioProps(){
       textc: 'created with React, Nodejs and MongoDB',
       iconc: ArrowSquareOut ,
       imgc:"../../assets/cardImg/Card1.png",
-      href:"../../pages/404/Error.tsx"
+      href:"https://www.fdgroup.company/"
     },
     { id: 2,
       titlec: 'ACHAHADA',

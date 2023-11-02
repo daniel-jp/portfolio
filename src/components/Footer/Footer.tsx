@@ -1,5 +1,5 @@
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
-import { InstagramLogo, LinkedinLogo, TwitterLogo, YoutubeLogo } from '@phosphor-icons/react';
+import { InstagramLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react';
 import { ReactNode } from 'react';
 
 import Logo2 from '../Logo2';
@@ -72,16 +72,15 @@ export default function Footer() {
 
 
         <Stack direction={'row'} spacing={6}>
-        <SocialButton  label={'Twitter'} href={'#'}>
+        <SocialButton  label={'Linkedin'}
+        href={'https://www.linkedin.com/in/daniel-j-paulino-737808198/'}>
             <LinkedinLogo size={22} />
         </SocialButton>
-        <SocialButton  label={'Twitter'} href={'#'}>
+        <SocialButton  label={'Twitter'} href={'https://twitter.com/Daniel28725148'}>
             <TwitterLogo size={22} />
         </SocialButton>
-        <SocialButton label={'YouTube'} href={'#'}>
-            <YoutubeLogo size={22} />
-        </SocialButton>
-        <SocialButton label={'Instagram'} href={'#'}>
+       
+        <SocialButton label={'Instagram'} href={'https://instagram.com/dannyj.paulino?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr'}>
             <InstagramLogo size={22} />
         </SocialButton>
         </Stack>

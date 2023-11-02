@@ -96,11 +96,13 @@ const languages = Language();
               transition="all 0.3s"
               _focus={{ boxShadow: 'none'}}>
               <HStack>
-                 <Stack p={1} bg="gray.700"
+                 <Stack p={1} bg="gray.300"
                    color="white" borderRadius={"50%"}
-                   _hover={{cursor:"pointer", bg:"gray.600",}}
+                   _hover={{
+                    cursor:"pointer", 
+                    bg:"gray.800",}}
                      display={{ base: 'flex', md: 'flex' }}>
-                  <Globe color='white' size={28} />
+                  <Globe color='black' size={32} />
                 </Stack>
               </HStack>
             </MenuButton>

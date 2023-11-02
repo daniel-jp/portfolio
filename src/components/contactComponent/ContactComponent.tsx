@@ -39,7 +39,7 @@ function ContactComponent(){
         <Flex  align={"center"}>
         
           <Box mr={4} >
-          <Link as={"a"} >
+          <Link href={"https://github.com/daniel-jp?tab=repositories"} >
             <IconButton bg={"purple.700"} 
             icon={<BsGithub color={"white"} size={22}/>}
             borderRadius="50%" 
@@ -51,11 +51,11 @@ function ContactComponent(){
        </Link>
        </Box>
         <Box m={4}>
-         <Link href={'#'}>
+         <Link href={'https://twitter.com/Daniel28725148'} target='_blank'>
          <IconButton bg={"purple.700"} 
             icon={<TwitterLogo color={"white"} size={22}/>}
             borderRadius="50%" 
-            aria-label={'github'}
+            aria-label={'Twiter'}
             _hover={{ transform: "scale(1.2)" }}
             _active={{ transform: "scale(0.9)" }}/>  
           
@@ -65,12 +65,12 @@ function ContactComponent(){
          </Link>
          </Box>
          <Box m={4}>
-          <Link  href={'#'}>
+          <Link href={'https://www.linkedin.com/in/daniel-j-paulino-737808198/'} target='_blank'>
 
           <IconButton bg={"purple.700"} 
             icon={<LinkedinLogo color={"white"} size={22}/>}
             borderRadius="50%" 
-            aria-label={'github'}
+            aria-label={'linkedin'}
             _hover={{ transform: "scale(1.2)" }}
             _active={{ transform: "scale(0.9)" }}/>  
           
@@ -79,12 +79,12 @@ function ContactComponent(){
           </Link>
           </Box>
           <Box m={4} borderRadius="50%"   bg={"purple.700"}>
-          <Link href={'#'}>
+          <Link href={'https://instagram.com/dannyj.paulino?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr'} target="_blank" >
 
           <IconButton bg={"purple.700"} 
             icon={<InstagramLogo color={"white"} size={22}/>}
             borderRadius="50%" 
-            aria-label={'github'}
+            aria-label={'instagram'}
             _hover={{ transform: "scale(1.2)" }}
             _active={{ transform: "scale(0.9)" }}/>  
         
