@@ -20,9 +20,9 @@ function SkillsComponent2({language,text,img}:{ language: string, text: string, 
         </Box> 
         <Flex align={"center"}
               w={"60px"} h={"60px"} 
-              p={1} bg={"gray.100"}  rounded={6}
-              color={useColorModeValue('gray.200', 'gray.200')}>
-      <Image rounded={6}  src={`/public/assets/langLogos/${img}`} />
+              p={1} bg={"gray.700"}  rounded={6} maxW={"full"} maxH={"full"}
+              color={useColorModeValue('gray.700', 'gray.700')}>
+      <Image rounded={6}  src={`../../assets/langLogos/${img}`} />
         </Flex>
       </Flex>
       </Stack>
