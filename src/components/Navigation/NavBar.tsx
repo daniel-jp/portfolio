@@ -159,7 +159,7 @@ const MobileNavItem = ({ name, children, path }:NavItem) => {
       <Box
         py={2}
         as="a"
-        href={path ?? '#'}
+        href={path ?? '/'}
         justifyContent="space-between"
         alignItems="center"
         _hover={{
@@ -172,14 +172,14 @@ const MobileNavItem = ({ name, children, path }:NavItem) => {
           <Icon
             as={ChevronDownIcon}
             transition={'all .25s ease-in-out'}
-            transform={isOpen ? 'rotate(180deg)' : ''}
+            transform={isOpen ? "rotate(180deg)" : ""}
             w={6}
             h={6}
           />
         )}
       </Box>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
           mt={2}
           pl={4}

@@ -20,7 +20,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Box
                as='a' 
-               href={navItem.path ?? '/'}
+               href={navItem.path ?? '#'}
                 p={2}
                
                 fontSize={'md'}
@@ -29,9 +29,7 @@ const DesktopNav = () => {
                 
                 _hover={{
                   textDecoration: 'none',
-                  color: linkHoverColor,
-                
-                }}>
+                  color: linkHoverColor, }}>
                 {navItem.name}
               </Box>
             </PopoverTrigger>

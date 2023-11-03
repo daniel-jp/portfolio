@@ -34,10 +34,9 @@ export const NAV_ITEMS = [
     path:"/portfolio",
     children: [
       {
-       
         name: "Job Board",
         subName: "Find your dream design job",
-        path: "portfolio/job",
+        path: "/portfolio/job/",
       },
       {
         

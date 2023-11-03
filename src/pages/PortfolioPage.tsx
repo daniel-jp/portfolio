@@ -50,7 +50,7 @@ const portfolioprops = portfolioProps();
       <Link as={"a"} textAlign={"center"}  bg={"purple.500"} w={"200px"} maxW={"full"} rounded={4}  _hover={{
         bg:"#944CAD"}}>
 
-        <Text color={"gray.900"}  py={1}   px={8}  fontSize={['md','2xl','2xl']} fontWeight={"600"}> Learn more </Text>
+        <Text color={"gray.900"}  py={1}   px={8}  fontSize={['md','2xl','2xl']} fontWeight={"600"}> show more </Text>
       </Link>
 
     </Flex>
