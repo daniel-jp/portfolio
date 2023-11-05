@@ -188,8 +188,8 @@ const MobileNavItem = ({ name, children, path }:NavItem) => {
           borderColor={useColorModeValue('gray.200', 'gray.700')}
           align={'start'}>
           {children &&
-            children.map((child) => (
-              <Box as="a" key={child.name} py={2} href={child.path}>
+            children.map((child, index) => (
+              <Box as="a" key={index} py={2} {...child}>
                 {child.name}
               </Box>
             ))}

@@ -17,53 +17,35 @@ export const NAV_ITEMS = [
     path: "/service",
     children: [
       {
-        name: "Explore Design Work",
-        subName: "Trending Design to inspire you",
-        path: "#",
+        name: "Frontend Services",
+        subName: "Dev. Web App, User Interface (UI)",
+        path: "/service/front-end",
       },
       {
-        name: "New & Noteworthy",
-        subName: "Up-and-coming Designers",
+        name: "Backend Services",
+        subName: "Dev. RESTful APIs, Data Persistence",
+        path: "/service/back-end",
+      },
+
+      {
+        name: "Spring Security",
+        subName: "Jwt. Authentication & Authorization",
         path: "#",
       },
+     
     ],
   },
   {
     id:"portfolio_id",
     name: "Portfolio",
     path:"/portfolio",
-    children: [
-      {
-        name: "Job Board",
-        subName: "Find your dream design job",
-        path: "/portfolio/job/",
-      },
-      {
-        
-        name: "Freelance Projects",
-        subName: "An exclusive list for contract work",
-        path: "#",
-      },
-    ],
+   
   },
   {
     id:"skill_id",
     name: "Skills",
     path:"/skills",
-    children: [
-      {
-       
-        name: "Job Board",
-        subName: "Find your dream design job",
-        path: "skills/job",
-      },
-      {
-        
-        name: "Freelance Projects",
-        subName: "An exclusive list for contract work",
-        path: "#",
-      },
-    ],
+  
   },
 
   {

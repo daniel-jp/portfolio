@@ -1,13 +1,25 @@
 import { EmailIcon, InfoIcon } from '@chakra-ui/icons';
-import { Box, Button,Text, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Stack, Textarea } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Stack,
+  Text,
+  Textarea,
+} from '@chakra-ui/react';
 
 export default function  ContactComponent2(){
 
    return (
      <>
-    <Stack   w={'full'} pt={{base:0, sm:2, md:3}}  rounded={6}>
+    <Stack   w={'full'} pt={{base:0, sm:2, md:3}} rounded={6}>
       <Box> 
-        <Text textAlign={"center"} fontSize={["md","xl"]}>Send me a message using the form, and I will give you a response as soon as possible.
+        <Text  pt={4} textAlign={"center"} fontSize={["md","xl"]}>
+          Send me a message using the form, and I will give you a response as soon as possible.
         </Text>
       </Box>
           <form>

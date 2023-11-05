@@ -1,15 +1,15 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Flex, Icon, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Icon, Link, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 
 interface NavItem {
   name: string;
   subName?: string;
   path?: string;
 }
-const DesktopSubNav = ({ name,subName, path }: NavItem) => {
+function DesktopSubNav({ name,subName, path }: NavItem) {
   return (
-    <Box
-      as="a" href={path}
+    <Link
+      as={"a"} href={path}
       role={'group'} p={2}
       display={'block'}
       rounded={'md'}
@@ -35,7 +35,7 @@ const DesktopSubNav = ({ name,subName, path }: NavItem) => {
           <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
-    </Box>
+    </Link>
   )
 }
 export default DesktopSubNav

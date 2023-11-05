@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import NavBar from './components/Navigation/NavBar';
 import Routes from './Routes';
 
+//import WithSubnavigation from './components/Navigation/WithSubnavigation';
 
 
 
@@ -15,7 +16,8 @@ function App() {
     <>
      <ChakraProvider>
     <CSSReset/>
-    <NavBar />
+    <NavBar/>
+    {/*<WithSubnavigation />*/}
         <Box p={2}>
         <RouterProvider router={Routes()} />
      </Box>

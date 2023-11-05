@@ -20,7 +20,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Box
                as='a' 
-               href={navItem.path ?? '#'}
+               href={navItem.path ?? '/'}
                 p={2}
                
                 fontSize={'md'}
@@ -44,8 +44,7 @@ const DesktopNav = () => {
                 minW={'sm'}>
                 <Stack>
                   {navItem.children.map((child) => (
-                    <DesktopSubNav
-                    key={child.name} {...child} />
+                    <DesktopSubNav  key={child.name} {...child} />
                   ))}
                 </Stack>
               </PopoverContent>

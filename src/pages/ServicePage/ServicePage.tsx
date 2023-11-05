@@ -1,8 +1,8 @@
 import { Box, Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 
-import ServiceComponent from '../components/servicesComponent/ServicesComponent';
-import Layout from '../layouts/Layout';
-import ServiceProps from '../props/serviceProp/ServiceProps';
+import ServiceComponent from '../../components/servicesComponent/ServicesComponent';
+import Layout from '../../layouts/Layout';
+import ServiceProps from '../../props/serviceProp/ServiceProps';
 
 function ServicePage(){
 const serviceProps = ServiceProps();

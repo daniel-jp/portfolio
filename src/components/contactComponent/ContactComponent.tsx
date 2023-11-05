@@ -13,14 +13,14 @@ function ContactComponent(){
   </Heading>
  
    
-            <Text flexGrow={1} display={"flex"}  fontSize={["md","xl"]} 
+            <Text flexGrow={1} pt={2} display={"flex"}  fontSize={["md","xl"]} 
             textAlign={'start'} color={"gray.600"}> 
                     Fill up the form below to contact
             </Text> 
         
 
        
-            <Text flexGrow={1} display={"flex"} fontSize={["sm","md"]} color={"gray.500"}> 
+            <Text flexGrow={1} pt={2} display={"flex"} fontSize={["sm","md"]} color={"gray.500"}> 
             <PhoneOutgoing size={32} /> +212 657 226 746 </Text>
          
           
@@ -35,7 +35,8 @@ function ContactComponent(){
           color={"gray.500" } fontSize={["sm","md"]} > 
            <MapPin size={32} /> Rabat-Morocco
           </Text>
-         <Box pt={{base:3, sm:3, md:4, lg:16}} > <Text> SOCIAL MIDIA</Text> </Box>
+      
+       <Box pt={2}> <Text> SOCIAL MIDIA</Text> </Box>
         <Flex  align={"center"}>
         
           <Box mr={4} >

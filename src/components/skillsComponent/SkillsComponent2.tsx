@@ -20,7 +20,7 @@ function SkillsComponent2({language,text,img}:{ language: string, text: string, 
         </Box> 
         <Flex align={"center"}
               w={"60px"} h={"60px"} 
-              p={1} bg={"gray.700"}  rounded={6} maxW={"full"} maxH={"full"}
+              p={3} bg={"gray.700"}  rounded={6} maxW={"full"} maxH={"full"}
               color={useColorModeValue('gray.700', 'gray.700')}>
       <Image rounded={6}  src={`../../assets/langLogos/${img}`} />
         </Flex>

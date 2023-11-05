@@ -35,7 +35,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
         <Link  color={"gray.400"} 
         href={`${href}`} _hover={{ textDecoration: "none"}}
         target="_blank" rounded={22}  
-        alignItems={"center"} p={2} h={8} 
+        alignItems={"center"} p={4} h={8} 
         bg={"purple.800"} display={"flex"}>
          
          <Text>visit the website </Text>
