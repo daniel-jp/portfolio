@@ -10,7 +10,7 @@ function ThemeSelector(){
 return(
 
   <Box >
-     <IconButton size={32}
+     <IconButton 
       aria-label="Toggle color mode"
       icon={colorMode === "light" ? <Moon /> : <SunDim />}
       onClick={toggleColorMode}

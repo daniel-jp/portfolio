@@ -12,7 +12,7 @@ import {
   Textarea,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 
 
