@@ -1,5 +1,6 @@
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Box, IconButton, useColorMode } from '@chakra-ui/react';
+import { Moon, SunDim } from '@phosphor-icons/react';
+
 
 function ThemeSelector(){
 
@@ -8,10 +9,10 @@ function ThemeSelector(){
 
 return(
 
-  <Box>
-     <IconButton rounded={"50%"}
-           aria-label="Toggle color mode"
-      icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+  <Box >
+     <IconButton size={32}
+      aria-label="Toggle color mode"
+      icon={colorMode === "light" ? <Moon /> : <SunDim />}
       onClick={toggleColorMode}
     />
   </Box>

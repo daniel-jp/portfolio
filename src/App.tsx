@@ -3,9 +3,8 @@ import { RouterProvider } from 'react-router';
 
 import Footer from './components/Footer/Footer';
 import NavBar from './components/Navigation/NavBar';
+import WithSubnavigation from './components/Navigation/WithSubnavigation';
 import Routes from './Routes';
-
-//import WithSubnavigation from './components/Navigation/WithSubnavigation';
 
 
 
@@ -15,13 +14,12 @@ function App() {
   return (
     <>
      <ChakraProvider>
-    <CSSReset/>
-    <NavBar/>
-    {/*<WithSubnavigation />*/}
-        <Box p={2}>
-        <RouterProvider router={Routes()} />
-     </Box>
-  <Footer/>
+        <CSSReset/>
+        <NavBar/>
+            <Box p={2}>  {/*<WithSubnavigation />*/}
+            <RouterProvider router={Routes()} />
+        </Box>
+      <Footer/>
   </ChakraProvider>
  </>
   )

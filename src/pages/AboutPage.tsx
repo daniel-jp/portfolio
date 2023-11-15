@@ -79,7 +79,7 @@ function AboutPage(){
             borderRadius={"50%"} bg={"#944CAD"}>
       </Box>
 
-        <Stack p={{base:3, sm:3, md:3, lg:50}} boxShadow="lg"  rounded={3}
+        <Stack _hover={{bg:"blackAlpha.500"}} p={{base:3, sm:3, md:3, lg:50}} boxShadow="lg"  rounded={3}
          marginBottom={"0"} 
           maxH={"full"} display={'flex'}>
           <Box px={2}> 
@@ -98,7 +98,7 @@ function AboutPage(){
           </Box>
     </Stack>
 
-    <Stack p={{base:3, sm:3, md:3,lg:50}} rounded={3} my={4} py={4} boxShadow="lg"  marginBottom={"0"} px={2} pt={5} maxH={"full"} display={'flex'}>
+    <Stack _hover={{bg:"blackAlpha.500"}} p={{base:3, sm:3, md:3,lg:50}} rounded={3} my={4} py={4} boxShadow="lg"  marginBottom={"0"} px={2} pt={5} maxH={"full"} display={'flex'}>
     <Box left={-2}  position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
           <Box px={2}> 
             <SimpleGrid columns={{ base: 1, md:1}}   color={"#944CAD"}>
@@ -118,7 +118,7 @@ function AboutPage(){
           </Box>
     </Stack>
 
-    <Stack p={{base:3, sm:3, md:3,lg:50}} rounded={3} boxShadow="lg"  px={2} my={4} py={4} 
+    <Stack _hover={{bg:"blackAlpha.500"}}  p={{base:3, sm:3, md:3,lg:50}} rounded={3} boxShadow="lg"  px={2} my={4} py={4} 
     marginBottom={"0"} pt={5} maxH={"full"}  display={'flex'}>
     <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
         

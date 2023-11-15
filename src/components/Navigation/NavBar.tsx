@@ -102,7 +102,7 @@ const languages = Language();
                     cursor:"pointer", 
                     bg:"gray.800",}}
                      display={{ base: 'flex', md: 'flex' }}>
-                  <Globe color='black' size={32} />
+                  <Globe color='black' />
                 </Stack>
               </HStack>
             </MenuButton>

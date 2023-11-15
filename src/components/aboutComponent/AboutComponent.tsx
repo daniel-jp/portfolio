@@ -10,7 +10,7 @@ function AboutComponent ({ title,text,icon}:
   return(
     <Box textAlign={'center'}>
    
-      <Stat bg={"gray.700"}
+      <Stat bg={"gray.700"}  
             px={{ base:'2', md: '2' }}
             boxShadow="lg"
             py={'2'} rounded={'lg'}>

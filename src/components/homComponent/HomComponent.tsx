@@ -54,14 +54,15 @@ export default function homComponent() {
 
     
 
-    <Stack  bgGradient="linear(to-l, #7928CA, #FF0080)" p={3} 
-    h={{sm:200, md:300, lg:300}} mt={10} w={{sm:200, md:300, lg:300}}
-    rounded={{sm:"2%", md:"3%", lg:"50%"}} 
-     pr={{sm:3, md: 10, lg:24}} pt={20} justify={'center'}>
+    <Stack  bg={"blackAlpha.500"} 
+    //bgGradient="linear(to-l, #7928CA, #FF0080)" 
+      p={3} rounded={{sm:"2%", md:"50%", lg:"50%"}} 
+      h={{sm:100, md:200, lg:200}} mt={10} w={{sm:100, md:200, lg:200}}
+      justify={'center'}>
 
-             <Image rounded={{sm:"2%", md:"3%", lg:"50%"}} 
-              h={{sm:200, md:240, lg:260}}
-              w={{sm:200, md:240, lg:260}}
+             <Image rounded={{sm:"2%", md:"50%", lg:"50%"}} p={3}
+              h={{sm:100, md:200, lg:200}}
+              w={{sm:100, md:200, lg:200}}
               alt={'Daniel'}
               fit={'cover'}
               align={'center'}

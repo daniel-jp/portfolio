@@ -11,8 +11,47 @@ import {
   Text,
   Textarea,
 } from '@chakra-ui/react';
+import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
+
+
+
 
 export default function  ContactComponent2(){
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+    function sendEmail(e: {preventDefault: () => void;}){
+
+      e.preventDefault();
+
+      if (name==''|| email==''|| message=='') {
+                alert("Fill in all the fields.");
+
+                return;
+      }
+
+      const templateParms={
+        from_name: name,
+        message: message,
+        email:email
+      }
+
+      emailjs.send("service_g3wnyeg","template_5dcimsm",templateParms,"VYtbYRJVHvmxoHbpp")
+      .then((response) => {
+        console.log("Email sended", response.status, response.text)
+        setName('')
+        setEmail('')
+        setMessage('')
+        
+      },(err)=>{
+        console.log("Error",err)
+      })
+    }
+
+
 
    return (
      <>
@@ -22,24 +61,24 @@ export default function  ContactComponent2(){
           Send me a message using the form, and I will give you a response as soon as possible.
         </Text>
       </Box>
-          <form>
+          <form className='form' onSubmit={sendEmail}>
             <FormControl mb={3}>
               <FormLabel color={'gray.500'}> Your name</FormLabel>
 
                     <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement children={<InfoIcon  color="purple.500" />} />
                           <Input  bg={"gray.700"} border={"none"}
-                            name="from_name" color={"gray.200"} fontWeight={"700"}
+                            name="name" color={"gray.200"} fontWeight={"700"}
                             type="text"
                             size="md" 
                             placeholder="Your name"
                              _hover={{
-                              border:"2px solid #805AD5",
+                              border:"2px solid #805AD5",}}
+                           onChange={(e)=>setName(e.target.value)}
+                           value={name}
+                            />
                            
-
-                            }} />
                     </InputGroup>
-                     
                   </FormControl>
 
                   <FormControl mb={3}>
@@ -47,29 +86,34 @@ export default function  ContactComponent2(){
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement children={<EmailIcon color="purple.500" />} />
                           <Input bg={"gray.700"} color={"gray.200"} fontWeight={"700"}
-                            type="email"  border={"none"}  _hover={{
-                              border:"2px solid #805AD5"
-
-                            }} 
-                            name="to_name" size="md"
-                            placeholder="exemple@portifolio.com"
+                            type="email"  border={"none"}
+                            
+                            name="email" size="md"
+                            placeholder="exemple@portifolio.com" 
+                            _hover={{border:"2px solid #805AD5"}}
+                            onChange={(e)=>setEmail(e.target.value)}
+                           value={email}
+                           
                           />
+                          
+                        </InputGroup>
 
-                        </InputGroup>  
-                      
                     </FormControl>
                       
 
                     <FormControl mb={3} >
                         <FormLabel color={'gray.500'}> Message </FormLabel>
-                        <Textarea  bg={"gray.700"}  border={"none"} color={"gray.200"} fontWeight={"700"}
-                          _hover={{  
+                        <Textarea  bg={"gray.700"}  border={"none"} color={"gray.200"} 
+                          name='message' fontWeight={"700"}
+                          _hover={{
                             border:"2px solid #805AD5",
                             borderRadius: 'gray.300'
                           }}
-                          name="message"
-                          placeholder="Enter your message here"
+
+                          onChange={(e)=>setMessage(e.target.value)}
+                           value={message}
                         />
+                    
                       
                   </FormControl>
                       
@@ -80,12 +124,12 @@ export default function  ContactComponent2(){
                     _hover={{
                       bg: 'red.400',
                       cursor: 'pointer'
-                    }}>
+                    }} >
                   Send Message
                   </Button>
                 </Stack>
                 </form>
-              </Stack>   
+              </Stack>
 
      </>
    )
