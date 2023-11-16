@@ -6,7 +6,6 @@ import {
   Box,
   Button,
   ChakraProvider,
-  CloseButton,
   FormControl,
   FormErrorMessage,
   FormLabel,
@@ -16,7 +15,6 @@ import {
   Stack,
   Text,
   Textarea,
-  useDisclosure,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
 import { Field, Form, Formik } from 'formik';
