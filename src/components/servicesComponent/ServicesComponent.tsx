@@ -16,7 +16,7 @@ function Services({icon, title,text,button}:any){
   return( 
 <Box w={"full"}>
 
-   <Card _hover={{bg:"blackAlpha.500"}} align={"center"} pt={4} px={3} boxShadow="lg" >
+   <Card _hover={{bg:"blackAlpha.500", cursor :'pointer',}} align={"center"} pt={4} px={3} boxShadow="lg" >
    <Flex
           w={12} 
           h={12}

@@ -86,10 +86,9 @@ const languages = Language();
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
-          direction={'row'}
-          spacing={6}>
+          direction={'row'} spacing={4}>
         <ThemeSelector/>
-      <HStack spacing={{ base: '0', md: '6' }}>
+      <HStack spacing={{ base: '0', md: '4' }}>
         <Flex alignItems={'center'} >
           <Menu>
             <MenuButton 

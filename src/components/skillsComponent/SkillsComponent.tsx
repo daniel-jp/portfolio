@@ -6,7 +6,7 @@ function SkillsComponent({language,text,img}:{ language: string, text: string, i
 
   return(
    <>
-      <Stack py={'5'}  w={"full"} _hover={{bg:"blackAlpha.500"}}
+      <Stack py={'5'}  w={"full"} _hover={{bg:"blackAlpha.500", cursor :'pointer',}}
       
      // borderColor={useColorModeValue('gray.100', 'gray.500')}
       rounded={'md'}>
