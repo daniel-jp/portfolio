@@ -30,7 +30,7 @@ export const NAV_ITEMS = [
       {
         name: "Spring Security",
         subName: "Jwt. Authentication & Authorization",
-        path: "#",
+        path: "*",
       },
      
     ],
@@ -51,7 +51,7 @@ export const NAV_ITEMS = [
   {
     id:"blog_id",
     name: "Blog",
-    path: "#",
+    path: "*",
   },
 
   {
