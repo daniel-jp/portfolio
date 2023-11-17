@@ -48,7 +48,7 @@ const portfolioprops = portfolioProps();
 
     <Flex mt={3} align={"center"} justify={"center"} >
 
-      <Link as={"a"} textAlign={"center"}  bg={"purple.500"} w={"200px"} maxW={"full"} rounded={4}  _hover={{
+      <Link as={"a"} href='https://github.com/daniel-jp?tab=repositories' textAlign={"center"}  bg={"purple.500"} w={"200px"} maxW={"full"} rounded={4}  _hover={{
         bg:"#944CAD"}}>
 
         <Text color={"gray.900"}  py={1}   px={8}  fontSize={['md','2xl','2xl']} fontWeight={"600"}> show more </Text>

@@ -16,7 +16,7 @@ export default function PortfolioProps(){
       textc: 'created with React, Nodejs and MongoDB',
       iconc: ArrowSquareOut,
       imgc:"../../assets/cardImg/Card2.jpeg",
-      href:"../../pages/404/"
+      href:"https://achahada-ubt.vercel.app/"
     }
     ,
     { id: 3,
@@ -24,21 +24,21 @@ export default function PortfolioProps(){
       textc: 'created with React, Nodejs and MongoDB',
       iconc:ArrowSquareOut,
       imgc:"../../assets/cardImg/Card3.png",
-      href:"../../pages/404/"
+      href:"https://meulugar.vercel.app/"
     }, 
     { id: 4,
       titlec: 'SERIES & MOVIES',
-      textc: 'created with Vite, Html and Css,  ',
+      textc: 'created with js + Vite, Html and Css,  ',
       iconc:ArrowSquareOut,
-      imgc:"../../assets/cardImg/Card4.png",
-      href:"../../pages/404/"
+      imgc:"../../assets/cardImg/Card4.jpg",  
+      href:"https://daniel-jp.github.io/Links-Aggregator/"
     },
     { id: 5,
       titlec: 'CRUD',
       textc: 'created with Angular, SpringBoot and Mysql',
-      iconc:ArrowSquareOut,
+      iconc:ArrowSquareOut, 
       imgc:"../../assets/cardImg/Card5.png",
-      href:"../../pages/404/"
+      href:"https://github.com/daniel-jp/angular-springBoot"
     }
     ,
     { id: 6,
@@ -46,7 +46,7 @@ export default function PortfolioProps(){
       textc: 'created with SpringBoot, Mysql and POSTMAN',
       iconc:ArrowSquareOut,
       imgc:"../../assets/cardImg/cardApi.jpeg",
-      href:"../../pages/404/"
+      href:"https://github.com/daniel-jp/SpringREST_API"
     }
   ]
   return portfolioProps;
