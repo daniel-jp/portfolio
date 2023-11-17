@@ -8,7 +8,7 @@ function AboutComponent ({ title,text,icon}:
   icon: any}) {
  
   return(
-    <Box textAlign={'center'} >
+    <Box textAlign={'center'}>
    
       <Stat bg={"gray.700"}  
             px={{ base:'2', md: '2' }}

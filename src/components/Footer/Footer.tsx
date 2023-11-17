@@ -32,7 +32,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      rounded={'full'}
+      rounded={'full'} 
       w={8} bg={"purple.700"} 
       h={8}
       cursor={'pointer'}

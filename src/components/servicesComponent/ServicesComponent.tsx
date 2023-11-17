@@ -14,7 +14,7 @@ import {
 
 function Services({icon, title,text,button}:any){
   return( 
-<Box w={"full"} overflow={"hidden"} >
+<Box w={"full"} overflow={"hidden"}>
 
    <Card  _hover={{bg:'whiteAlpha.50', cursor :'pointer',}} 
    align={"center"} pt={4} px={3} boxShadow="lg">

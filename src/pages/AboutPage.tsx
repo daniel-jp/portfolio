@@ -16,7 +16,7 @@ function AboutPage(){
   return(
     <>
     <Layout>
-      <Flex textAlign={'center'}  px={3} my={20}
+      <Flex textAlign={'center'}  px={3} my={20} 
             justify={'center'} w={"full"} display={'block'} 
             direction={{ base: 'column', sm: 'row' }}>
 
@@ -53,7 +53,7 @@ function AboutPage(){
     </Box>
   
 
-  <Box mx={{base:0, sm:2, md:3, lg:20}}>
+  <Box mx={{base:0, sm:2, md:3, lg:20}} >
 
         <Box textAlign={'initial'} mt={10} display={"block"}>
           <Text fontSize={{sm:"1xl",md:"2xl",lg:"3xl"}} fontFamily={"'Inter', sans-serif"}>EDUCATION</Text>

@@ -77,7 +77,7 @@ export default function homComponent() {
 
     </Flex>
 
-    <Flex  display={'block'}  pb={10} pt={10} >
+    <Flex  display={'block'} pt={10}>
       <Box>
         <Text px={3} py={1} rounded={6}  
         fontSize={{base:"1xl", sm:"2xl",md:"2xl"}} 
@@ -85,7 +85,7 @@ export default function homComponent() {
                 I am ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
       </Text>
       </Box>
-      <Box pt={10}>
+      <Box pt={5} mb={5}>
       <Button as={'a'} href="/src/pages/pdf/Daniel_cv_EN.pdf" download maxW={'full'} 
                   rounded={'full'} fontWeight={'normal'}
                   colorScheme={'red'}

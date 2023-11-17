@@ -10,9 +10,9 @@ const serviceProps = ServiceProps();
     <>
     <Layout>
 
-    <Flex  mx={{base:0, sm:2, md:3, lg:20}} display={"block"}
-      justify={'center'}  my={20} overflow={"hidden"}
-      direction={{ base: 'column', sm: 'row' }}>
+    <Flex  mx={{base:0, sm:2, md:3, lg:20}} 
+           display={"block"} justify={'center'}  my={20} 
+           h={"100vh"} direction={{ base: 'column', sm: 'row' }}>
 
         <Stack spacing={4} as={Container} pt={50} pb={5}  maxW={'4xl'} textAlign={'center'}>
         <Heading bgGradient='linear(to-l,#944CAD, #3E91C0, #3E91C0, #3E91C0)' 
@@ -24,8 +24,10 @@ const serviceProps = ServiceProps();
         I would like to illustrate the areas where I work and the types of services I do.
         </Text>
       </Stack>
-    <Box>
-    <SimpleGrid columns={{base:1,sm:1, md:1,lg:3}}  spacing={{ base: 2, md: 4 }}>
+
+
+    <Box  overflow={"hidden"}  pb={20}>
+    <SimpleGrid  columns={{base:1,sm:1, md:1,lg:3}}  spacing={{ base: 2, md: 4 }}>
         {
           serviceProps.map((servicep)=>(
 
@@ -41,6 +43,7 @@ const serviceProps = ServiceProps();
 
   </SimpleGrid>
   </Box>
+
  
 </Flex>
 </Layout>
