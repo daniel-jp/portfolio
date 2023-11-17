@@ -2,8 +2,6 @@ import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden 
 import { InstagramLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react';
 import { ReactNode } from 'react';
 
-import Logo2 from '../Logo2';
-
 'use client'
 
 /*
