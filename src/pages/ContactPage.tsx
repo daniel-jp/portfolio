@@ -6,7 +6,7 @@ import ContactComponent2 from '../components/contactComponent/ContactComponent2'
 function ContactPage() {
    return (
     <>
-    <Flex  mb={16} alignContent={"center"}  h={"100vh"} p={2} mx={{base:0, sm:2, md:3, lg:20}} 
+    <Flex    my={32} alignContent={"center"}  h={"100vh"} p={2} mx={{base:0, sm:2, md:3, lg:20}} 
     flexWrap={"wrap"}>
 
        

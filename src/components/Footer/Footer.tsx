@@ -67,8 +67,8 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Logo2/>
-        <Text>© 2023 Daniel portfolio. All rights reserved</Text>
+       <Text></Text>
+        <Text> © 2023 Daniel portfolio. All rights reserved</Text>
 
 
         <Stack direction={'row'} spacing={6}>

@@ -11,7 +11,7 @@ const serviceProps = ServiceProps();
     <Layout>
 
     <Flex mx={{base:0, sm:2, md:3, lg:20}} display={"block"}
-      justify={'center'} pb={20}
+      justify={'center'}  my={20}
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>
         <Stack spacing={4} as={Container} pt={50} pb={5}  maxW={'4xl'} textAlign={'center'}>

@@ -9,7 +9,7 @@ export default function homComponent() {
 
 
   return (
-  <Box  mx={{base:0, sm:2, md:3, lg:20}}
+  <Box  mx={{base:0, sm:2, md:3, lg:20}} my={20}
       justifyContent={"center"} 
       textAlign={'center'} h={"100vh"} overflowX={"hidden"}>
   
@@ -22,7 +22,7 @@ export default function homComponent() {
             lineHeight={1.1}
             fontWeight={600}
             fontSize={['2xl', '2xl', '2xl', '4xl']}>
-            <Text
+            <Text m={2}
               as={'span'} 
               position={'relative'}
               _after={{
@@ -41,7 +41,8 @@ export default function homComponent() {
          
         <Stack>
         <Text p={2} fontFamily={"'Inter', sans-serif"} fontWeight={"bold"}
-        fontSize={['2xl', '2xl', '2xl', '5xl']} pt={{base:2, md:10}} as={'span'} >
+        fontSize={['2xl', '2xl', '2xl', '5xl']} pt={{base:2, md:10}} as={'span'} 
+        pl={{sm:3, md: 12, lg:16}}>
             Daniel Joaquim Paulino
             </Text>
             </Stack> 
@@ -54,7 +55,7 @@ export default function homComponent() {
 
     
 
-    <Stack  bg={"blackAlpha.500"} 
+    <Stack  bg={"blackAlpha.800"}
     //bgGradient="linear(to-l, #7928CA, #FF0080)" 
       p={3} rounded={{sm:"2%", md:"50%", lg:"50%"}} 
       h={{sm:100, md:200, lg:200}} mt={10} w={{sm:100, md:200, lg:200}}

@@ -9,10 +9,10 @@ function ThemeSelector(){
 
 return(
 
-  <Box>
-     <IconButton borderRadius={"50%"} 
+  <Box pt={1}>
+     <IconButton borderRadius={"50%"}
       aria-label="Toggle color mode"
-      icon={colorMode === "light" ? <Moon /> : <SunDim />}
+      icon={colorMode === "light" ? <Moon size={22} color='black'/> : <SunDim size={22} color='white'/>}
       onClick={toggleColorMode}
     />
   </Box>

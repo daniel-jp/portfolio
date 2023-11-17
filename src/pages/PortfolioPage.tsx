@@ -10,7 +10,7 @@ const portfolioprops = portfolioProps();
     <>
     <Layout>
     <Flex  display={"block"} mx={{base:0, sm:2, md:3, lg:12}}
-      justify={'center'} pb={100} 
+      justify={'center'}  my={20}
      
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>

@@ -43,8 +43,8 @@ const languages = Language();
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box zIndex={10}
-    position="relative">
+    <Box zIndex={10} position="fixed" top={0} 
+    left={0} right={0}>
       <Flex  
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
@@ -95,13 +95,18 @@ const languages = Language();
               transition="all 0.3s"
               _focus={{ boxShadow: 'none'}}>
               <HStack>
-                 <Stack p={1} bg="gray.300"
-                   color="white" borderRadius={"50%"}
+                 <Stack p={1} 
+                   borderRadius={"50%"} 
                    _hover={{
                     cursor:"pointer", 
-                    bg:"gray.800",}}
+                   }}
                      display={{ base: 'flex', md: 'flex' }}>
-                  <Globe color='black' />
+
+                  <IconButton borderRadius={"50%"}
+                      aria-label="Toggle color mode"
+                      icon={ <Globe size={22} />}
+                    />
+
                 </Stack>
               </HStack>
             </MenuButton>

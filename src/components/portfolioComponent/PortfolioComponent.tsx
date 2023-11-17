@@ -11,7 +11,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
 
 
   return(
-<Flex w={"full"} align={"center"}
+<Flex w={"full"} align={"center"} 
     position="relative"
     bgPosition="center" backgroundRepeat="no-repeat" visibility={'visible'}
     backgroundSize="cover" rounded={6}
