@@ -9,9 +9,9 @@ export default function homComponent() {
 
 
   return (
-  <Box  mx={{base:0, sm:2, md:3, lg:20}} my={20}
+  <Box overscrollY={'auto'} mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={10}
       justifyContent={"center"} 
-      textAlign={'center'} h={"100vh"} overflowX={"hidden"}>
+      textAlign={'center'}  overflowX={"hidden"}>
   
 
     <Flex  display={{sm:'flex', md:'wrap'}}>
@@ -55,7 +55,7 @@ export default function homComponent() {
 
     
 
-    <Stack  bg={"blackAlpha.800"}
+    <Stack overscrollY={'auto'} bg={"blackAlpha.800"}
     //bgGradient="linear(to-l, #7928CA, #FF0080)" 
       p={3} rounded={{sm:"2%", md:"50%", lg:"50%"}} 
       h={{sm:100, md:200, lg:200}} mt={10} w={{sm:100, md:200, lg:200}}
@@ -77,12 +77,12 @@ export default function homComponent() {
 
     </Flex>
 
-    <Flex display={'block'}  pb={10} pt={10} >
+    <Flex  display={'block'}  pb={10} pt={10} >
       <Box>
         <Text px={3} py={1} rounded={6}  
         fontSize={{base:"1xl", sm:"2xl",md:"2xl"}} 
         textAlign={"center"} color={"gray.500"} >
-                Ready to take on new challenges in case of a job ou Freelance opportunity. I am actively looking for job in the fields of Software/Web Development and interested in Data.
+                I am ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
       </Text>
       </Box>
       <Box pt={10}>
@@ -94,7 +94,7 @@ export default function homComponent() {
                 <Text> Download CV </Text>
                 <ArrowCircleDown color='#1A365D' size={22} />
         </Button>
-        </Box>
+      </Box>
   </Flex>
 
   </Box>

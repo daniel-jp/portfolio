@@ -29,12 +29,12 @@ function AboutPage(){
             <Heading 
             textAlign={{base:"center", md:"center",
             lg:"start"}} pl={10} pr={10} fontFamily={"'inter',sans-serif"}
-            fontSize={['md', 'lg','3xl']} pt={5} color={"gray.600"}>
+            fontSize={['md', 'lg','3xl']} pt={5} >
               Software and Data Engineer
             </Heading>
 
-            <Text pl={2} fontWeight={"500"} color={"gray.500"} fontSize={['sm', 'md','lg']}>
-            I'm Daniel Paulino, of Angolan nationality, I live in Morocco for academic training reasons..
+            <Text textAlign={"justify"} pl={2} fontWeight={"500"} color={"gray.500"} fontSize={['sm', 'md','lg']}>
+            I am an Angolan national currently residing in Morocco, where I am pursuing academic endeavors. I have completed my undergraduate and master's degrees at Moroccan public institutions, acquiring extensive knowledge in the field of Information Technology. This academic experience has provided me with a strong foundation and significantly enriched my understanding in the technology sector, preparing me for future professional challenges.
             </Text>
           </Stack>
           <Box mx={{base:0, sm:2, md:3, lg:20}}>

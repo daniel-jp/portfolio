@@ -14,9 +14,10 @@ import {
 
 function Services({icon, title,text,button}:any){
   return( 
-<Box w={"full"}>
+<Box w={"full"} overflow={"hidden"} >
 
-   <Card _hover={{bg:"blackAlpha.500", cursor :'pointer',}} align={"center"} pt={4} px={3} boxShadow="lg" >
+   <Card  _hover={{bg:'whiteAlpha.50', cursor :'pointer',}} 
+   align={"center"} pt={4} px={3} boxShadow="lg">
    <Flex
           w={12} 
           h={12}
@@ -27,7 +28,7 @@ function Services({icon, title,text,button}:any){
 
          <Icon as={icon} fontSize={32} color={"orange.600"} />
         </Flex>
-    <CardHeader textAlign={"center"} color={"pink.300"} >
+    <CardHeader textAlign={"center"} color={"pink.500"} >
       <Heading fontSize={{ base: '1xl', sm: '2xl' }} > {title}</Heading>
     </CardHeader>
     <CardBody  mt={-8}>
@@ -36,7 +37,7 @@ function Services({icon, title,text,button}:any){
     
     </CardBody>
      <CardFooter pt={-20} justify={'center'}>
-      <Button bg={"#944CAD"}  px={6} maxW={"full"} borderRadius={"30"} >{button}</Button>
+      <Button as={'a'} href="../../pages/404/" bg={"#944CAD"}  px={6} maxW={"full"} borderRadius={"30"} >{button}</Button>
     </CardFooter>
   </Card>
 

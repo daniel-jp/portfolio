@@ -10,10 +10,10 @@ const serviceProps = ServiceProps();
     <>
     <Layout>
 
-    <Flex mx={{base:0, sm:2, md:3, lg:20}} display={"block"}
-      justify={'center'}  my={20}
-      direction={{ base: 'column', sm: 'row' }}
-      overflow='hidden'>
+    <Flex  mx={{base:0, sm:2, md:3, lg:20}} display={"block"}
+      justify={'center'}  my={20} overflow={"hidden"}
+      direction={{ base: 'column', sm: 'row' }}>
+
         <Stack spacing={4} as={Container} pt={50} pb={5}  maxW={'4xl'} textAlign={'center'}>
         <Heading bgGradient='linear(to-l,#944CAD, #3E91C0, #3E91C0, #3E91C0)' 
     bgClip='text'fontSize={{ base: '2xl', sm: '4xl' }}  textAlign={{base:"center", md:"end"}} 
