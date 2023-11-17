@@ -14,13 +14,13 @@ function AboutPage(){
 
   
   return(
-    <>
+
     <Layout>
-      <Flex textAlign={'center'}  px={3} my={20} 
+      <Flex textAlign={'center'}  my={20} 
             justify={'center'} w={"full"} display={'block'} 
             direction={{ base: 'column', sm: 'row' }}>
 
-        <Stack  w={"full"} mx={{base:0, sm:2, md:3, lg:10}} px={4}  pb={10} textAlign={"start"}>
+        <Stack  mx={{base:0, sm:2, md:3, lg:10}} textAlign={"start"}>
           <Heading fontSize={['2xl', '3xl', '4xl']} 
                   bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
                   bgClip='text'> About, me
@@ -33,7 +33,8 @@ function AboutPage(){
               Software and Data Engineer
             </Heading>
 
-            <Text textAlign={"justify"} pl={2} fontWeight={"500"} color={"gray.500"} fontSize={['sm', 'md','lg']}>
+            <Text pb={20} textAlign={"center"} fontWeight={"500"} color={"gray.500"} 
+            fontSize={['sm', 'md','lg']}>
             I am an Angolan national currently residing in Morocco, where I am pursuing academic endeavors. I have completed my undergraduate and master's degrees at Moroccan public institutions, acquiring extensive knowledge in the field of Information Technology. This academic experience has provided me with a strong foundation and significantly enriched my understanding in the technology sector, preparing me for future professional challenges.
             </Text>
           </Stack>
@@ -144,9 +145,9 @@ function AboutPage(){
     </Box>
 
     </Flex>
-    
     </Layout>
-    </>
+  
+  
 
   )
 }

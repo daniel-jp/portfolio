@@ -3,18 +3,22 @@ import '@fontsource/inter/600.css';
 import { Box, Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import { ArrowCircleDown } from '@phosphor-icons/react';
 
+import Layout from '../../layouts/Layout';
+
 export default function homComponent() {
 
 
 
 
   return (
-  <Box overscrollY={'auto'} mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={10}
+
+  <Layout>
+  <Box mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={10} 
       justifyContent={"center"} 
-      textAlign={'center'}  overflowX={"hidden"}>
+      textAlign={'center'}>
   
 
-    <Flex  display={{sm:'flex', md:'wrap'}}>
+    <Flex display={{sm:'flex', md:'wrap'}}>
 
       <Stack flexGrow={1} flexWrap={"wrap-reverse"} justify={'center'} 
             pl={{sm:3, md: 20, lg:24}} pt={5}>
@@ -55,7 +59,7 @@ export default function homComponent() {
 
     
 
-    <Stack overscrollY={'auto'} bg={"blackAlpha.800"}
+    <Stack  bg={"blackAlpha.800"}
     //bgGradient="linear(to-l, #7928CA, #FF0080)" 
       p={3} rounded={{sm:"2%", md:"50%", lg:"50%"}} 
       h={{sm:100, md:200, lg:200}} mt={10} w={{sm:100, md:200, lg:200}}
@@ -77,15 +81,15 @@ export default function homComponent() {
 
     </Flex>
 
-    <Flex  display={'block'} pt={10}>
+    <Flex   display={'block'} pt={10}>
       <Box>
-        <Text px={3} py={1} rounded={6}  
+        <Text  py={1} rounded={6}  
         fontSize={{base:"1xl", sm:"2xl",md:"2xl"}} 
         textAlign={"center"} color={"gray.500"} >
                 I am ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
       </Text>
       </Box>
-      <Box pt={5} mb={5}>
+      <Box h={"20vh"} pt={5} mb={5}>
       <Button as={'a'} href="/src/pages/pdf/Daniel_cv_EN.pdf" download maxW={'full'} 
                   rounded={'full'} fontWeight={'normal'}
                   colorScheme={'red'}
@@ -98,6 +102,7 @@ export default function homComponent() {
   </Flex>
 
   </Box>
+  </Layout>
   );
 }
 

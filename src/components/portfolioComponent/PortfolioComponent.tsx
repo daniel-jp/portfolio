@@ -19,7 +19,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
     _hover={{
       opacity:'1.0',
       padding: "0px",visibility:'visible',
-      zIndex:"1",}} height={190} justifyContent={"center"}>
+      zIndex:"1",}}  justifyContent={"center"}>
 
  {/* */}
    <Card  opacity='1.0' w={"full"} h={"full"} bg={"gray.900"} zIndex={-1} align={"center"}>

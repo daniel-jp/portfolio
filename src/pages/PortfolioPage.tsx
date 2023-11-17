@@ -28,7 +28,7 @@ const portfolioprops = portfolioProps();
         </Text>
       </Stack>
     <Box>
-    <SimpleGrid  columns={{base:1, sm:1, md:1,lg:3}} p={{base:3, md:10}} spacing={{ base: 4, md: 4 }}>
+    <SimpleGrid  columns={{base:1, sm:1, md:1,lg:3}} p={{base:1, md:10}} spacing={{ base: 4, md: 4 }}>
         {
           portfolioprops.map((portfoliop) => (
 

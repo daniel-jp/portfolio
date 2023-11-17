@@ -2,18 +2,20 @@ import { Box, Flex, Icon, Stat, Text, useColorModeValue } from '@chakra-ui/react
 
 
 
+
 function AboutComponent ({ title,text,icon}:
   { title: string,
   text: string,
   icon: any}) {
  
   return(
+
     <Box textAlign={'center'}>
    
       <Stat bg={"gray.700"}  
-            px={{ base:'2', md: '2' }}
+            px={{ base:'3', md: '3' }}
             boxShadow="lg"
-            py={'2'} rounded={'lg'}>
+            rounded={'lg'}>
 
           <Flex mx={{base:1 , md:2}} justify={"space-between"}>
              <Box textAlign={'initial'}> 
