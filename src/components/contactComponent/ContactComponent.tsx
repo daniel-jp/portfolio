@@ -6,9 +6,10 @@ function ContactComponent(){
   return(
    <>
    <Box  w={'full'} > 
-   <Heading fontWeight={"bold"} fontSize={{base:'2xl', sm:'2xl',md:'5xl'}} 
-              
-                bgGradient='linear(to-l,#944CAD,#944CAD,#3E91C0, #3E91C0)' bgClip='text' > 
+   <Heading fontWeight={"bold"} textAlign={"start"}
+            fontSize={{base:'2xl', sm:'2xl',md:'5xl'}} 
+            bgGradient='linear(to-l,#944CAD,#944CAD,#3E91C0, #3E91C0)' 
+            bgClip='text' > 
                 Contact
   </Heading>
  
@@ -36,7 +37,8 @@ function ContactComponent(){
            <MapPin size={32} /> Rabat-Morocco
           </Text>
       
-       <Box pt={2}> <Text> SOCIAL MIDIA</Text> </Box>
+       <Box pt={2}> <Text textAlign={"start"}> SOCIAL MIDIA</Text> </Box>
+
         <Flex  align={"center"}>
         
           <Box mr={4} >
