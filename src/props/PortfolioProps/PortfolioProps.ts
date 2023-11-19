@@ -27,7 +27,7 @@ export default function PortfolioProps(){
       href:"https://meulugar.vercel.app/"
     }, 
     { id: 4,
-      titlec: 'SERIES & MOVIES',
+      titlec: 'GAME STREAMS & CHANNELS',
       textc: 'Created with js + Vite + Html5 + Css3,  ',
       iconc:ArrowSquareOut,
       imgc:"../../assets/cardImg/Card4.jpg",  

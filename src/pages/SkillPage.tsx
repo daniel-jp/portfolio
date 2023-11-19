@@ -12,10 +12,10 @@ function SkillPage (){
   const skillpro2 = SkillProp2()
     return (
 
-      <div>
+ 
     <Layout>
 
-    <Box h={"100vh"} pt={5}  mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={50}>
+    <Box pt={5}  mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={50}>
     <chakra.h1 
             bgGradient='linear(to-l, #CA58F2, #3E91C0, #3E91C0, #CA58F2, #CA58F2, #CA58F2)' 
             bgClip='text'
@@ -24,7 +24,9 @@ function SkillPage (){
             My Skills
           </chakra.h1>
 
-          <Text pt={5}  color={'gray.500'} fontWeight={"500"}  textAlign={{ base:"center", sm:"center", md:"justify", lg:"center"}} fontSize={["md","lg"]}>
+          <Text pt={5}  color={'gray.500'} fontWeight={"500"}  
+               textAlign={{ base:"center", sm:"center", md:"justify", 
+               lg:"center"}} fontSize={["md","lg"]}>
               My programming skills is in the following languages </Text>
           <chakra.h4
             textAlign={'center'} mt={5}
@@ -73,7 +75,7 @@ function SkillPage (){
           </SimpleGrid>
         </Box>
     </Layout>
-  </div>
+
     )
   
 }

@@ -71,11 +71,11 @@ const languages = Language();
               flex={{ base: 1 }} 
               justify={{ base: 'center', md: 'start'}} align={'center'}>
 
-          <Link as={"a"}  href={'/'} fontSize={'md'} fontWeight={600}
+          <Link as={"a"}  href={'/'} fontSize={'md'} 
             textAlign={{ base: 'center', md: 'left'}}
             fontFamily={'heading'}
             color={"gray.800"}>
-            <Logo/>
+           <Logo/>
           </Link>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

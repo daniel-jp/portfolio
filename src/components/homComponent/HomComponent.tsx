@@ -13,7 +13,7 @@ export default function homComponent() {
   return (
 
   <Layout>
-  <Box mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={10} 
+  <Box h={'100vh'} mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={10} 
       justifyContent={"center"} 
       textAlign={'center'}>
   
@@ -89,7 +89,7 @@ export default function homComponent() {
                 I am ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
       </Text>
       </Box>
-      <Box h={"20vh"} pt={5} mb={5}>
+      <Box pt={5} mb={5}>
       <Button as={'a'} href="/src/pages/pdf/Daniel_cv_EN.pdf" download maxW={'full'} 
                   rounded={'full'} fontWeight={'normal'}
                   colorScheme={'red'}
