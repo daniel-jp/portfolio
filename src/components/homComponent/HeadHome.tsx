@@ -8,7 +8,7 @@ const testimonials = [
     title: 'Hi! it‘s me',
     content:
       'And I’m a Software and Data Engineer',
-    avatar:'/public/assets/image/avatar.png',
+    avatar:'../../assets/image/avatar.png',
   },
 
 ]
