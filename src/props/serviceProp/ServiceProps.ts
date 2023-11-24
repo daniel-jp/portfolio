@@ -24,6 +24,48 @@ export default function ServiceProps() {
   text:"I develop interfaces for web and mobile applications using the Figma tool, implementing them with renowned frameworks such as Tailwind CSS, Chakra UI, and Material-UI.",
   button:"Read more"
 
+},{
+  id:4,
+  icon:PenNib,
+  title:"Learning Data",
+  text:" In progress...",
+  button:"Read more"
+
+},{
+  id:5,
+  icon:PenNib,
+  title:"Learning Data",
+  text:" In progress...",
+  button:"Read more"
+
+},{
+  id:6,
+  icon:PenNib,
+  title:"Learning Data",
+  text:" In progress...",
+  button:"Read more"
+
+},{
+  id:7,
+  icon:PenNib,
+  title:"Learning Data",
+  text:" In progress...",
+  button:"Read more"
+
+},{
+  id:8,
+  icon:PenNib,
+  title:"Learning Data",
+  text:" In progress...",
+  button:"Read more"
+
+},{
+  id:9,
+  icon:PenNib,
+  title:"Learning Data",
+  text:" In progress...",
+  button:"Read more"
+
 }]
    return serviceProp;
  

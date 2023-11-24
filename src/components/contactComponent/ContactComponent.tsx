@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, IconButton, Link, Text } from '@chakra-ui/react';
 import { At, InstagramLogo, LinkedinLogo, MapPin, PhoneOutgoing, TwitterLogo } from '@phosphor-icons/react';
-import { BsGithub } from 'react-icons/bs';
 
 function ContactComponent(){
   return(
@@ -41,19 +40,8 @@ function ContactComponent(){
 
         <Flex  align={"center"}>
         
-          <Box mr={4} >
-          <Link href={"https://github.com/daniel-jp?tab=repositories"} >
-            <IconButton bg={"purple.700"} 
-            icon={<BsGithub color={"white"} size={22}/>}
-            borderRadius="50%" 
-            aria-label={'github'}
-            _hover={{ transform: "scale(1.2)" }}
-            _active={{ transform: "scale(0.9)" }}/>  
-          
-  
-       </Link>
-       </Box>
-        <Box m={4}>
+        
+        <Box >
          <Link href={'https://twitter.com/Daniel28725148'} target='_blank'>
          <IconButton bg={"purple.700"} 
             icon={<TwitterLogo color={"white"} size={22}/>}
@@ -81,7 +69,7 @@ function ContactComponent(){
          
           </Link>
           </Box>
-          <Box m={4} borderRadius="50%"   bg={"purple.700"}>
+          <Box  borderRadius="50%"   bg={"purple.700"}>
           <Link href={'https://instagram.com/dannyj.paulino?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr'} target="_blank" >
 
           <IconButton bg={"purple.700"} 

@@ -15,7 +15,7 @@ function App() {
      <ChakraProvider>
         <CSSReset/>
         <NavBar/>
-            <Box p={2}>  {/*<WithSubnavigation />*/}
+            <Box>  {/*<WithSubnavigation />*/}
             <RouterProvider router={Routes()} />
         </Box>
       <Footer/>

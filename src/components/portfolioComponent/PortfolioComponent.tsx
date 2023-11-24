@@ -11,7 +11,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
 
 
   return(
-<Flex w={"full"} align={"center"} overflow={"hidden"}
+<Flex w={"full"} align={"center"} overflow={"hidden"} 
     position="relative"
     bgPosition="center" backgroundRepeat="no-repeat" visibility={'visible'}
     backgroundSize="cover" rounded={6}
@@ -22,7 +22,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc, href}:PortfolioData){
       zIndex:"1",}}  justifyContent={"center"}>
 
  {/* */}
-   <Card  opacity='1.0' w={"full"} h={"full"} bg={"gray.900"} zIndex={-1} align={"center"}>
+   <Card opacity='1.0' w={"full"} h={"full"} bg={"gray.900"} zIndex={-1} align={"center"}>
           
     <CardHeader mb={-4} textAlign={"center"}>
       <Heading color={"pink.600"} fontWeight={"bold"} fontSize={["sm","mg","lg"]} > {titlec}</Heading>

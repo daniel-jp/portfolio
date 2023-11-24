@@ -1,9 +1,10 @@
 import '@fontsource/inter/600.css';
 
-import { Box, Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
-import { ArrowCircleDown } from '@phosphor-icons/react';
+import { Box, Button, chakra, Flex, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { ArrowCircleDown, Code, Database } from '@phosphor-icons/react';
 
 import Layout from '../../layouts/Layout';
+import HeadHome from './HeadHome';
 
 export default function homComponent() {
 
@@ -13,80 +14,34 @@ export default function homComponent() {
   return (
 
   <Layout>
-  <Box h={'100vh'} mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={10} 
-      justifyContent={"center"} 
+  <Stack     mx={{base:0, sm:2, md:3, lg:20}}
+      mt={20} mb={10} 
       textAlign={'center'}>
+
+          <chakra.h3 textAlign={'right'}
+          fontFamily={'Work Sans'}
+          fontWeight={'bold'}
+          fontSize={20} bgGradient='linear(to-l,#9B19D9, #386283, #8222AF,#9B19D9, )' 
+          bgClip='text'
+          //textTransform={'lowercase'}
+        >
+         Home 
+        </chakra.h3>
   
+    <HeadHome/>
 
-    <Flex display={{sm:'flex', md:'wrap'}}>
+     <Flex justify={"center"}>
+      <Code size={40} color={useColorModeValue( 'gray.500','orange')} />  <Text p={5}></Text>
+                  <Database size={40} 
+                  color={useColorModeValue( 'gray.500','orange')} /></Flex>
 
-      <Stack flexGrow={1} flexWrap={"wrap-reverse"} justify={'center'} 
-            pl={{sm:3, md: 20, lg:24}} pt={5}>
-        <Heading
-            lineHeight={1.1}
-            fontWeight={600}
-            fontSize={['2xl', '2xl', '2xl', '4xl']}>
-            <Text m={2}
-              as={'span'} 
-              position={'relative'}
-              _after={{
-                width: 'full',
-                height: '30%',
-                position: 'absolute',
-                bottom: 1,
-                left: 0,
-              
-              }} display={"flex"} bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 
-              bgClip='text'>
-             Hi! it‘s me
-            </Text>
-           
-          </Heading>
-         
-        <Stack>
-        <Text p={2} fontFamily={"'Inter', sans-serif"} fontWeight={"bold"}
-        fontSize={['2xl', '2xl', '2xl', '5xl']} pt={{base:2, md:10}} as={'span'} 
-        pl={{sm:3, md: 12, lg:16}}>
-            Daniel Joaquim Paulino
-            </Text>
-            </Stack> 
-          <Stack>
-        <Text as={'span'} fontSize={['1xl', '2xl', '2xl', '4xl']}> 
-        And I’m a  Software and Data Engineer</Text>
-        </Stack>
-
-    </Stack>
-
-    
-
-    <Stack  bg={"blackAlpha.800"}
-    //bgGradient="linear(to-l, #7928CA, #FF0080)" 
-      p={3} rounded={{sm:"2%", md:"50%", lg:"50%"}} 
-      h={{sm:100, md:200, lg:200}} mt={10} w={{sm:100, md:200, lg:200}}
-      justify={'center'}>
-
-             <Image rounded={{sm:"2%", md:"50%", lg:"50%"}} p={3}
-              h={{sm:100, md:200, lg:200}}
-              w={{sm:100, md:200, lg:200}}
-              alt={'Daniel'}
-              fit={'cover'}
-              align={'center'}
-              src={'../../assets/image/danny1.png'}
-              
-              />
-
-        
-    </Stack>
-
-
-    </Flex>
-
-    <Flex   display={'block'} pt={10}>
+    <Flex display={'block'}>
       <Box>
+         
         <Text  py={1} rounded={6}  
         fontSize={{base:"1xl", sm:"2xl",md:"2xl"}} 
         textAlign={"center"} color={"gray.500"} >
-                I am ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
+                I'm ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
       </Text>
       </Box>
       <Box pt={5} mb={5}>
@@ -101,7 +56,7 @@ export default function homComponent() {
       </Box>
   </Flex>
 
-  </Box>
+  </Stack>
   </Layout>
   );
 }

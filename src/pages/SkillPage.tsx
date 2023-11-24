@@ -15,7 +15,7 @@ function SkillPage (){
  
     <Layout>
 
-    <Box pt={5}  mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={50}>
+    <Box  pt={5}  mx={{base:0, sm:2, md:3, lg:20}} mt={20} mb={{sm:100, md:200, lg:340}}>
     <chakra.h1 
             bgGradient='linear(to-l, #CA58F2, #3E91C0, #3E91C0, #CA58F2, #CA58F2, #CA58F2)' 
             bgClip='text'
@@ -36,7 +36,7 @@ function SkillPage (){
             fontWeight={'bold'} >
             Frontend: Js, CSS & Frameworks
           </chakra.h4>
-          <SimpleGrid columns={{ base: 1,sm:1, md: 1,lg:3 }}  spacing={{ base: 3, lg: 3 }}>
+          <SimpleGrid overflow={'hidden'} columns={{ base: 1,sm:1, md: 1,lg:3 }}  spacing={{ base: 3, lg: 3 }}>
           {  
             skillpro.map((skillpr)=>(
 
@@ -59,7 +59,7 @@ function SkillPage (){
             fontWeight={'bold'} >
             Backend: Java & Frameworks
           </chakra.h4>
-          <SimpleGrid  columns={{ base:1,sm:1, md:1,lg:3 }}  spacing={{ base: 3, lg: 3 }}>
+          <SimpleGrid overflow={'hidden'} columns={{ base:1,sm:1, md:1,lg:3 }}  spacing={{ base: 3, lg: 3 }}>
           {  
             skillpro2.map((skillpr2)=>(
 

@@ -47,7 +47,7 @@ export default function PortfolioProps(){
       iconc:ArrowSquareOut,
       imgc:"../../assets/cardImg/cardApi.jpeg",
       href:"https://github.com/daniel-jp/SpringREST_API"
-    }
+    },
   ]
   return portfolioProps;
 }
