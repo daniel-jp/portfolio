@@ -14,26 +14,26 @@ export default function homComponent() {
   return (
 
   <Layout>
-  <Stack     mx={{base:0, sm:2, md:3, lg:20}}
-      mt={20} mb={10} 
-      textAlign={'center'}>
+  <Stack     
+      mx={{base:0, sm:2, md:3, lg:20}}
+      textAlign={'center'} mt={20} >
 
           <chakra.h3 textAlign={'right'}
           fontFamily={'Work Sans'}
-          fontWeight={'bold'}
+          fontWeight={'bold'} 
           fontSize={20} bgGradient='linear(to-l,#9B19D9, #386283, #8222AF,#9B19D9, )' 
-          bgClip='text'
+          bgClip='text' 
           //textTransform={'lowercase'}
         >
          Home 
         </chakra.h3>
   
-    <HeadHome/>
+      <HeadHome/>
 
      <Flex justify={"center"}>
-      <Code size={40} color={useColorModeValue( 'gray.500','orange')} />  <Text p={5}></Text>
-                  <Database size={40} 
-                  color={useColorModeValue( 'gray.500','orange')} /></Flex>
+      <Code size={40} color={useColorModeValue( 'gray.500','orange')} />  
+      <Text p={5}></Text>
+      <Database size={40}  color={useColorModeValue( 'gray.500','orange')} /></Flex>
 
     <Flex display={'block'}>
       <Box>

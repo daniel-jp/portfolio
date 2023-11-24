@@ -28,7 +28,7 @@ function TestimonialCard(props: TestimonialCardProps) {
 
   const size = '200px'
   
-  const color = 'white'
+  const color = 'pink.400'
 
   const pulseRing = keyframes`
   0% {
@@ -45,7 +45,7 @@ function TestimonialCard(props: TestimonialCardProps) {
   `
   return (
     <Flex direction={{ base: 'column-reverse', md: 'row' }} 
-      justifyContent={'space-between'} align={"center"} >
+      justifyContent={'space-between'} align={"center"} mt={-20} >
 
       <Flex  w="full" direction={'column'} textAlign={'left'} >
         <Heading bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)' 

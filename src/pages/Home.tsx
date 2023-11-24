@@ -7,7 +7,7 @@ export default function Home() {
   return (
 
     
-      <Box mb={{sm:100, md:200, lg:340}}> <HomComponent /></Box>
+      <Box mb={{sm:100, md:230, lg:340}}> <HomComponent /></Box>
        
 
   

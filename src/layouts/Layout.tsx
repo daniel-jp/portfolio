@@ -5,7 +5,7 @@ export default function Layout({children, ...rest }: ContainerProps) {
     <>
     <Container {...rest} 
                 textAlign={"center"} justifyContent={"center"} 
-                alignContent={'center'} overflowX={"hidden"} 
+                alignContent={'center'} overflowX={"hidden"}  overflow={"hidden"}
                 right={"0"} maxW={"8xl"}>
         {children}
        
