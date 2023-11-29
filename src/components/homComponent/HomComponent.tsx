@@ -44,8 +44,11 @@ export default function homComponent() {
                 I'm ready to take on new professional challenges, whether in a conventional workplace or in a remote work setting. I am actively seeking employment opportunities in the fields of Software Development/Web and also have a keen interest in Data-related roles. I am eager to apply my skills and knowledge in a challenging and dynamic environment, contributing to innovative projects and advancing professionally.
       </Text>
       </Box>
+      
+
+
       <Box pt={5} mb={5}>
-      <Button as={'a'} href="/src/pages/pdf/Daniel_Paulino__SpReact_en_.pdf" download maxW={'full'} 
+      <Button as={'a'} href="/src/pages/pdf/cv.pdf" maxW={'full'} target='_blank'
                   rounded={'full'} fontWeight={'normal'}
                   colorScheme={'red'}
                   bg={'#944CAD'}
@@ -54,6 +57,8 @@ export default function homComponent() {
                 <ArrowCircleDown color='#1A365D' size={22} />
         </Button>
       </Box>
+
+
   </Flex>
 
   </Stack>
