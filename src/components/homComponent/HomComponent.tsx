@@ -45,7 +45,7 @@ export default function homComponent() {
       </Text>
       </Box>
       <Box pt={5} mb={5}>
-      <Button as={'a'} href="/src/pages/pdf/Daniel_cv_EN.pdf" download maxW={'full'} 
+      <Button as={'a'} href="/src/pages/pdf/Daniel_Paulino__SpReact_en_.pdf" download maxW={'full'} 
                   rounded={'full'} fontWeight={'normal'}
                   colorScheme={'red'}
                   bg={'#944CAD'}
