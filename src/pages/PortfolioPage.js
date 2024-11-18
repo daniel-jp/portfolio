@@ -66,9 +66,9 @@ export default function PortfolioPage() {
     
     const animationStyles = {
         entering: { opacity: 0, transform: 'translateY(30px)' },
-        entered: { opacity: 1, transform: 'translateY(0)', transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out' },
+        entered: { opacity: 1, transform: 'translateY(0)', transition: 'opacity 0.3s ease-in-out, transform 0.3s ease-in-out' },
         exiting: { opacity: 1, transform: 'translateY(0)' },
-        exited: { opacity: 0, transform: 'translateY(-30px)', transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out' },
+        exited: { opacity: 0, transform: 'translateY(-30px)', transition: 'opacity 0.3s ease-in-out, transform 0.3s ease-in-out' },
       };
   return (
     <div style={pageStyle}>
@@ -78,7 +78,7 @@ export default function PortfolioPage() {
         <TransitionGroup component={null}>
             {projects.map((project, index) => (
 
-            <CSSTransition key={index} timeout={500}>
+            <CSSTransition key={index} timeout={200}>
                 {(state) => (
                 <Col md={4} className="mb-4" style={{...animationStyles[state] }}>
 
